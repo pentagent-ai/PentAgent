@@ -52,9 +52,14 @@ export const viewport: Viewport = {
   themeColor: "#0f0f0e",
 };
 
+const authForward = `(function(){try{var b=${JSON.stringify(process.env.NEXT_PUBLIC_BASE_PATH || "")};var l=location;if(l.pathname.indexOf("/auth/callback")!==-1)return;var q=new URLSearchParams(l.search);var h=l.hash||"";if(q.has("code")||q.has("error")||/access_token=|error=/.test(h)){l.replace(b+"/auth/callback/"+l.search+h);}}catch(e){}})();`;
+
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: authForward }} />
+      </head>
       <body className="flex min-h-full flex-col bg-canvas font-sans text-ink">
         <a
           href="#main"
