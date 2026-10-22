@@ -1,0 +1,45 @@
+User-Agent: *
+Allow: /
+Disallow: /auth/
+
+User-Agent: Googlebot
+Allow: /
+Disallow: /auth/
+
+User-Agent: OAI-SearchBot
+Allow: /
+Disallow: /auth/
+
+User-Agent: ChatGPT-User
+Allow: /
+Disallow: /auth/
+
+User-Agent: PerplexityBot
+Allow: /
+Disallow: /auth/
+
+User-Agent: Perplexity-User
+Allow: /
+Disallow: /auth/
+
+User-Agent: Claude-SearchBot
+Allow: /
+Disallow: /auth/
+
+User-Agent: Claude-User
+Allow: /
+Disallow: /auth/
+
+User-Agent: GPTBot
+Allow: /
+Disallow: /auth/
+
+User-Agent: ClaudeBot
+Allow: /
+Disallow: /auth/
+
+User-Agent: Google-Extended
+Allow: /
+Disallow: /auth/
+
+Sitemap: https://pentagent-ai.github.io/PentAgent/sitemap.xml
