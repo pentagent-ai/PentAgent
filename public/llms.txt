@@ -1,0 +1,70 @@
+# PentAgent
+
+> PentAgent is an AI-native desktop workbench for web app security. It learns a web app from the traffic your browser sends, explains that traffic, plans tests, and runs a test only after you approve the live request.
+
+PentAgent runs on your machine. You bring your own model: an API key, or a local or self-hosted model. Projects and captured traffic stay on your machine. The model provider you choose receives the traffic you send to it, including request and response contents. Access is an invite-only pilot. Only test systems you own or have explicit permission to test.
+
+## Product
+- [Home](https://pentagent-ai.github.io/PentAgent/): What PentAgent is, how a test runs, and where captured traffic goes.
+- [Request pilot access](https://pentagent-ai.github.io/PentAgent/pilot/): Invite-only pilot. A request is reviewed by hand and does not grant access by itself.
+
+## Documentation
+- [Docs](https://pentagent-ai.github.io/PentAgent/docs/): How to install, set up and use PentAgent.
+
+### Getting started
+- [Getting started](https://pentagent-ai.github.io/PentAgent/docs/getting-started/): The short path from download to your first captured request.
+- [Install](https://pentagent-ai.github.io/PentAgent/docs/getting-started/install/): Download the pilot build, start it, and open PentAgent.
+- [Sign in](https://pentagent-ai.github.io/PentAgent/docs/getting-started/sign-in/): Sign in with GitHub and what happens while your access is being approved.
+- [Welcome screen](https://pentagent-ai.github.io/PentAgent/docs/getting-started/welcome-screen/): The two quick checkboxes you see once, before the app opens.
+- [First run](https://pentagent-ai.github.io/PentAgent/docs/getting-started/first-run/): Create a project, start the proxy, and capture your first request.
+
+### Capture
+- [Proxy & Intercept](https://pentagent-ai.github.io/PentAgent/docs/capture/proxy/): Start capturing, then pause, edit, forward or drop requests with Intercept.
+- [HTTP history](https://pentagent-ai.github.io/PentAgent/docs/capture/http-history/): Browse, search and filter everything the proxy has captured.
+- [WebSockets](https://pentagent-ai.github.io/PentAgent/docs/capture/websockets/): See WebSocket frames captured through the proxy.
+- [Match / Replace](https://pentagent-ai.github.io/PentAgent/docs/capture/match-replace/): Rewrite requests and responses automatically as they pass through.
+- [Import](https://pentagent-ai.github.io/PentAgent/docs/capture/import/): Bring in HAR or XML captures, and move whole projects between machines.
+
+### Test
+- [Repeater](https://pentagent-ai.github.io/PentAgent/docs/test/repeater/): Edit a request by hand, send it again, and compare what comes back.
+- [Intruder](https://pentagent-ai.github.io/PentAgent/docs/test/intruder/): Send one request many times, swapping in a list of values at the places you mark.
+- [Scanner](https://pentagent-ai.github.io/PentAgent/docs/test/scanner/): Run a passive audit on captured traffic and review the issues it finds.
+- [Target & scope](https://pentagent-ai.github.io/PentAgent/docs/test/target/): Set which hosts are in scope, and browse the sitemap of what you've captured.
+- [Organizer](https://pentagent-ai.github.io/PentAgent/docs/test/organizer/): Keep interesting requests in collections with notes, tags and leads.
+- [Decoder](https://pentagent-ai.github.io/PentAgent/docs/test/decoder/): Encode, decode and hash values, or chain several steps together.
+- [Comparer](https://pentagent-ai.github.io/PentAgent/docs/test/comparer/): Diff two requests or responses side by side.
+- [Sequencer](https://pentagent-ai.github.io/PentAgent/docs/test/sequencer/): Capture session tokens and check whether they look random.
+- [Collaborator](https://pentagent-ai.github.io/PentAgent/docs/test/collaborator/): Generate out-of-band payloads and watch HTTP and DNS callbacks.
+- [Inspector](https://pentagent-ai.github.io/PentAgent/docs/test/inspector/): See params, cookies and headers for the message you have selected.
+
+### Project
+- [Dashboard](https://pentagent-ai.github.io/PentAgent/docs/project/dashboard/): See capture health, findings, scans and recent evidence for the current project.
+- [Sitemap](https://pentagent-ai.github.io/PentAgent/docs/project/sitemap/): The Target sitemap and the UI Map built from the lab browser.
+- [Kits](https://pentagent-ai.github.io/PentAgent/docs/project/kits/): Browse the attack library and build campaign kits from Plan threads.
+
+### Findings
+- [Records](https://pentagent-ai.github.io/PentAgent/docs/findings/records/): The engagement report in Markdown, with chapters you or the model can maintain.
+
+### AI
+- [Ask](https://pentagent-ai.github.io/PentAgent/docs/ai/ask/): Ask questions about traffic, scope and coverage in the AI Assistant.
+- [Plan](https://pentagent-ai.github.io/PentAgent/docs/ai/plan/): Write an attack plan the agent can follow.
+- [Agent](https://pentagent-ai.github.io/PentAgent/docs/ai/agent/): Run an approved plan with live requests that ask for your approval.
+- [Context](https://pentagent-ai.github.io/PentAgent/docs/ai/context/): Attach recon notes and see the request selected for the assistant.
+- [Approvals & stop](https://pentagent-ai.github.io/PentAgent/docs/ai/approvals/): Approve live requests, stop runs, Explore toggles and spend caps.
+
+### Settings
+- [General](https://pentagent-ai.github.io/PentAgent/docs/settings/general/): Theme, API health, embeddings and lab browser overview.
+- [AI models](https://pentagent-ai.github.io/PentAgent/docs/settings/ai-models/): Providers, Explore toggles, approvals batch mode and spend caps.
+- [Proxy & gateway](https://pentagent-ai.github.io/PentAgent/docs/settings/proxy/): Listener defaults, lab browser, CA certificate and proxy options.
+- [Project](https://pentagent-ai.github.io/PentAgent/docs/settings/project/): Scope, rename, filter defaults, upstream proxy and delete for the active project.
+- [Collaborator](https://pentagent-ai.github.io/PentAgent/docs/settings/collaborator/): Out-of-band listener status and environment variables.
+- [Lab browser](https://pentagent-ai.github.io/PentAgent/docs/settings/lab-browser/): How lab Chromium, the capture extension and proxy modes work.
+
+### Reference
+- [Shortcuts](https://pentagent-ai.github.io/PentAgent/docs/reference/shortcuts/): Keyboard shortcuts for the workbench, Repeater and Intruder.
+- [Troubleshooting](https://pentagent-ai.github.io/PentAgent/docs/reference/troubleshooting/): Fixes for common install, sign-in, proxy and capture problems.
+- [FAQ](https://pentagent-ai.github.io/PentAgent/docs/reference/faq/): Short answers to common questions about the pilot.
+
+## Policies
+- [Privacy](https://pentagent-ai.github.io/PentAgent/privacy/): What stays on your computer, and the few account records that do not.
+- [Terms](https://pentagent-ai.github.io/PentAgent/terms/): Only test what you are allowed to test, and how the pilot works.
