@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Callout, H2, H3, InfoTable, Keys, Step, Steps, Ui } from "@/components/docs/content";
+import { Callout, InfoTable, Ui } from "@/components/docs/content";
 import { DocPage } from "@/components/docs/doc-page";
 
 export const metadata: Metadata = {
@@ -21,16 +21,15 @@ export default function GeneralSettingsPage() {
         head={["Section", "What you set"]}
         rows={[
           [<Ui key="a">Appearance</Ui>, "Theme for the workbench. System follows your OS preference."],
-          [<Ui key="b">API</Ui>, "Status and version of the local API."],
-          [<Ui key="c">Embeddings (AI search)</Ui>, <>Enabled / model / backend. Configure with <code>EMBEDDING_*</code>; install with <code>uv sync --extra embeddings</code>.</>],
-          [<Ui key="d">Server config (.env)</Ui>, <>Reminders for <code>API_HOST</code>, <code>PROXY_LISTEN_*</code>, <code>DATABASE_URL</code>, stealth and scanner flags. Restart the API after editing.</>],
-          [<Ui key="e">Lab browser</Ui>, "Lists available Playwright browsers and notes that the capture extension loads automatically in lab Chromium."],
+          [<Ui key="b">API</Ui>, "Status and version of the local engine."],
+          [<Ui key="c">Embeddings (AI search)</Ui>, "Whether local semantic search is active or using the lightweight keyword fallback."],
+          [<Ui key="d">Server config</Ui>, "Active local host, proxy listener defaults, and storage status."],
+          [<Ui key="e">Lab browser</Ui>, "Lists available lab browsers and notes that the capture extension loads automatically in lab Chromium."],
         ]}
       />
       <Callout kind="note">
-        The empty-browser message may suggest <code>uv run playwright install chromium</code>. Pilot tarball users
-        should install Chromium with the venv Python under{" "}
-        <code>~/.local/share/pentagent/venv</code> instead — see{" "}
+        PentAgent downloads its isolated lab Chromium automatically on the first launch. If a network interruption
+        skipped that step, restart PentAgent with an internet connection — see{" "}
         <Link href="/docs/getting-started/install">Install</Link>.
       </Callout>
     </DocPage>

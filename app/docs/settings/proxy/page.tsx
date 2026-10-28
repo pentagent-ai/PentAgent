@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
-import Link from "next/link";
-import { Callout, H2, H3, InfoTable, Keys, Step, Steps, Ui } from "@/components/docs/content";
+import { InfoTable, Ui } from "@/components/docs/content";
 import { DocPage } from "@/components/docs/doc-page";
 
 export const metadata: Metadata = {
@@ -23,7 +22,7 @@ export default function ProxySettingsPage() {
           [<Ui key="a">Listener defaults</Ui>, <>Listen host and port (default port 8088). <Ui>Check port</Ui> sees if it&apos;s free.</>],
           [<Ui key="b">Lab browser</Ui>, <><Ui>Proxy mode</Ui> Off / Optional / Required, browser pick, <Ui>Open lab Chromium</Ui>, <Ui>Stop listener</Ui>, <Ui>Reset</Ui>.</>],
           [<Ui key="c">Active gateway</Ui>, "Status and address of the running listener."],
-          [<Ui key="d">MITM CA certificate</Ui>, <><Ui>Download CA certificate</Ui>. Lab Chromium trusts it automatically; download for manual setups.</>],
+          [<Ui key="d">PentAgent CA certificate</Ui>, <><Ui>Download CA certificate</Ui> (<code>pentagent-ca-cert.crt</code>). Lab Chromium trusts it automatically; download for manual setups.</>],
           [<Ui key="e">Proxy options</Ui>, "Upstream proxy chain and TLS pass-through hosts (no MITM). Restart the listener after changes."],
         ]}
       />

@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import { ButtonLink } from "@/components/button";
+import { PilotEmbed } from "@/components/pilot-embed";
 import { links } from "@/lib/links";
 
 export const metadata: Metadata = {
@@ -37,33 +39,24 @@ export default function PilotPage() {
           ))}
         </ul>
 
-        <p className="mt-10 text-sm leading-relaxed text-ink-muted">
+        <div className="mt-10 rounded-[6px] border border-line bg-surface p-5">
+          <p className="font-mono text-[11px] uppercase tracking-[0.14em] text-ink-dim">Next step</p>
+          <p className="mt-2 text-sm leading-relaxed text-ink-muted">
+            Once you submit the request form, head to the download page to get the pilot build for your operating system.
+          </p>
+          <div className="mt-4">
+            <ButtonLink href={links.download} variant="secondary" size="sm">
+              Go to download page
+            </ButtonLink>
+          </div>
+        </div>
+
+        <p className="mt-8 text-sm leading-relaxed text-ink-muted">
           PentAgent is for testing apps you own or have permission to test.
         </p>
       </div>
 
-      <div id="form" className="min-w-0 scroll-mt-28">
-        <div className="overflow-hidden rounded-[6px] border border-line bg-surface">
-          <iframe
-            src={links.pilotFormEmbed}
-            title="PentAgent pilot request form"
-            loading="lazy"
-            className="block h-[1500px] w-full border-0 bg-white sm:h-[1400px]"
-          />
-        </div>
-        <p className="mt-4 text-sm leading-relaxed text-ink-dim">
-          Form not showing?{" "}
-          <a
-            className="text-ink underline decoration-line-strong underline-offset-4 hover:decoration-accent"
-            href={links.pilotForm}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Open it in a new tab
-          </a>
-          .
-        </p>
-      </div>
+      <PilotEmbed />
     </section>
   );
 }

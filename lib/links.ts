@@ -1,6 +1,4 @@
 // Every internal and external link on the site comes from this file.
-// The download URL is a placeholder: replace it with a signed, expiring build URL
-// only after the real artifact is hosted behind access control.
 
 export const links = {
   home: "/",
@@ -18,7 +16,19 @@ export const links = {
   pilotFormEmbed: "https://airtable.com/embed/app8sXqKI3zZSfOqn/pagbHLm1HcD8eoiuZ/form",
   // Latest public release assets. Upload with these exact, version-less names.
   releases: "https://github.com/pentagent-ai/PentAgent/releases/latest",
+  // Windows (64-bit)
+  downloadWinZip: "https://github.com/pentagent-ai/PentAgent/releases/latest/download/PentAgent-win-x64.zip",
+  downloadWinZipSha: "https://github.com/pentagent-ai/PentAgent/releases/latest/download/PentAgent-win-x64.zip.sha256",
+  // macOS (Apple Silicon)
+  downloadMacDmg: "https://github.com/pentagent-ai/PentAgent/releases/latest/download/PentAgent-mac-arm64.dmg",
+  downloadMacDmgSha: "https://github.com/pentagent-ai/PentAgent/releases/latest/download/PentAgent-mac-arm64.dmg.sha256",
+  downloadMacZip: "https://github.com/pentagent-ai/PentAgent/releases/latest/download/PentAgent-mac-arm64.zip",
+  downloadMacZipSha: "https://github.com/pentagent-ai/PentAgent/releases/latest/download/PentAgent-mac-arm64.zip.sha256",
+  // Linux (64-bit)
   downloadDeb: "https://github.com/pentagent-ai/PentAgent/releases/latest/download/pentagent_amd64.deb",
+  downloadDebSha: "https://github.com/pentagent-ai/PentAgent/releases/latest/download/pentagent_amd64.deb.sha256",
+  downloadAppImage: "https://github.com/pentagent-ai/PentAgent/releases/latest/download/PentAgent-linux-x86_64.AppImage",
+  downloadAppImageSha: "https://github.com/pentagent-ai/PentAgent/releases/latest/download/PentAgent-linux-x86_64.AppImage.sha256",
   downloadTarball: "https://github.com/pentagent-ai/PentAgent/releases/latest/download/pentagent-linux-x64.tar.gz",
   downloadTarballSha: "https://github.com/pentagent-ai/PentAgent/releases/latest/download/pentagent-linux-x64.tar.gz.sha256",
 } as const;
@@ -41,7 +51,6 @@ export const footerLinks = {
   ],
   access: [
     { label: "Request pilot access", href: links.pilot },
-    { label: "Download", href: links.download },
   ],
   legal: [
     { label: "Terms", href: links.terms },

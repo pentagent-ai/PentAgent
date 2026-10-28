@@ -14,7 +14,7 @@ export default function GettingStartedPage() {
   return (
     <DocPage href="/docs/getting-started">
       <p>
-        Getting set up takes four short steps. Each one has its own page with screenshots if you want more detail.
+        Getting set up takes four short steps. Each one has its own guide if you want more detail.
       </p>
 
       <H2 id="before-you-begin">Before you begin</H2>
@@ -23,7 +23,10 @@ export default function GettingStartedPage() {
           An approved pilot request. If you don&rsquo;t have one yet, <Link href="/pilot">request pilot access</Link>.
         </li>
         <li>The GitHub account you used on your request.</li>
-        <li>A 64-bit Linux computer with Python 3.12 and an internet connection for the first launch.</li>
+        <li>
+          A 64-bit Windows, macOS (Apple Silicon), or 64-bit Linux computer with an internet connection for the first
+          launch.
+        </li>
         <li>An app you own or have permission to test. A practice app on your own machine works well.</li>
       </ul>
 
@@ -31,7 +34,8 @@ export default function GettingStartedPage() {
       <Steps>
         <Step title="Install PentAgent">
           <p>
-            Download the pilot build, unpack it and run the launcher. The first launch sets everything up for you.{" "}
+            Download the pilot build for Windows, macOS, or Linux and open PentAgent. The first launch sets up the
+            local engine and lab browser for you.{" "}
             <Link href="/docs/getting-started/install">Install</Link>
           </p>
         </Step>

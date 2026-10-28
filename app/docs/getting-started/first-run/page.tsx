@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Callout, H2, H3, InfoTable, Legend, Step, Steps, Ui } from "@/components/docs/content";
-import { CodeBlock } from "@/components/docs/code-block";
 import { DocPage } from "@/components/docs/doc-page";
 
 export const metadata: Metadata = {
@@ -60,12 +59,12 @@ export default function FirstRunPage() {
         </Step>
         <Step title="CA certificate">
           <p>
-            To read HTTPS traffic, the browser needs to trust PentAgent&rsquo;s certificate. PentAgent creates it the
-            first time the proxy runs, and the lab browser trusts it automatically, so usually there&rsquo;s nothing to
-            do here.
+            To read HTTPS traffic, the browser needs to trust PentAgent&rsquo;s certificate. PentAgent creates its
+            local <strong>PentAgent CA</strong> certificate on your computer and the lab browser trusts it
+            automatically, so usually there&rsquo;s nothing to do here.
           </p>
           <p>
-            <Ui>Download CA</Ui> saves the certificate as <code>mitmproxy-ca-cert.pem</code>. You only need it if you
+            <Ui>Download CA</Ui> saves the certificate as <code>pentagent-ca-cert.crt</code>. You only need it if you
             want to send traffic from another browser or tool through PentAgent yourself.
           </p>
         </Step>
@@ -123,7 +122,7 @@ export default function FirstRunPage() {
         rows={[
           [
             "No lab browser found",
-            "Install the lab browser once, as described in Install. The command is below.",
+            "Restart PentAgent while connected to the internet so first-launch setup can finish downloading the lab browser.",
           ],
           [
             "The proxy won't start",
@@ -131,7 +130,7 @@ export default function FirstRunPage() {
           ],
           [
             "Pages show a certificate warning",
-            "Make sure you're browsing in the lab window, which trusts PentAgent's certificate automatically.",
+            "Make sure you're browsing in the lab window, which trusts the PentAgent CA certificate automatically.",
           ],
           [
             "Nothing appears in HTTP history",
@@ -139,7 +138,6 @@ export default function FirstRunPage() {
           ],
         ]}
       />
-      <CodeBlock code="~/.local/share/pentagent/venv/bin/python -m playwright install chromium" />
     </DocPage>
   );
 }

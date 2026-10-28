@@ -26,9 +26,6 @@ export function PilotCta() {
               <ButtonLink href={links.pilot} size="lg">
                 Request pilot access
               </ButtonLink>
-              <ButtonLink href={links.download} size="lg" variant="secondary">
-                Download for Linux
-              </ButtonLink>
             </div>
           </div>
         </div>

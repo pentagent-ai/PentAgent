@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Callout, H2, H3, InfoTable, Keys, Step, Steps, Ui } from "@/components/docs/content";
+import { H2, InfoTable } from "@/components/docs/content";
 import { DocPage } from "@/components/docs/doc-page";
 
 export const metadata: Metadata = {
@@ -17,9 +17,18 @@ export default function TroubleshootingPage() {
       <InfoTable
         head={["Problem", "What to try"]}
         rows={[
-          ["launch.sh fails unless you're in the folder", "cd into the unpacked directory, then run ./pa_release/launch.sh."],
-          ["Lab browser missing", <>Install Chromium into the pilot venv: <code>~/.local/share/pentagent/venv/bin/python -m playwright install chromium</code>.</>],
-          ["Port already in use", <>Change the listen port in Settings › Proxy &amp; gateway, or stop whatever is on 8088.</>],
+          [
+            "Windows SmartScreen or macOS Gatekeeper prompt",
+            <>On Windows, click More info → Run anyway. On macOS, right-click PentAgent in Applications and choose Open (see <Link href="/docs/getting-started/install">Install</Link>).</>,
+          ],
+          [
+            "Lab browser missing",
+            "Restart PentAgent with an internet connection so the startup screen can finish downloading the isolated lab Chromium browser.",
+          ],
+          [
+            "Port already in use",
+            <>Change the listen port in Settings › Proxy &amp; gateway, or stop whatever is using port 8088.</>,
+          ],
         ]}
       />
 
@@ -27,7 +36,10 @@ export default function TroubleshootingPage() {
       <InfoTable
         head={["Problem", "What to try"]}
         rows={[
-          ["GitHub sign-in never returns to the app", "The pilot tarball may not register the pentagent:// handler yet. Prefer the supported build path from the pilot download page; email code sign-in is coming soon."],
+          [
+            "GitHub sign-in never returns to the app",
+            "Make sure you finished approving on GitHub and allowed your browser to open the pentagent:// link.",
+          ],
           ["Not approved yet", "Apply for pilot access, then wait for approval. The app rechecks every few hours."],
           ["Update required", "Download the latest pilot build and replace your install."],
         ]}
@@ -37,8 +49,11 @@ export default function TroubleshootingPage() {
       <InfoTable
         head={["Problem", "What to try"]}
         rows={[
-          ["No rows in HTTP history", <>Browse in the lab window, not daily Chrome. Check the history scope filter isn't hiding everything — see <Link href="/docs/capture/http-history">HTTP history</Link>.</>],
-          ["Certificate warnings", "Use lab Chromium (CA auto-trusted), or download the CA for a manual setup."],
+          [
+            "No rows in HTTP history",
+            <>Browse in the lab window, not daily Chrome. Check the history scope filter isn&apos;t hiding everything — see <Link href="/docs/capture/http-history">HTTP history</Link>.</>,
+          ],
+          ["Certificate warnings", "Use lab Chromium (PentAgent CA is auto-trusted), or download pentagent-ca-cert.crt for a manual setup."],
           ["Intercept on but nothing pauses", "Confirm lab Chromium is running and the host is in scope (or turn off In-scope only)."],
           ["UI Map empty despite proxy traffic", "Open the lab browser while the project is selected, then browse in that window so the extension is seeded."],
         ]}
