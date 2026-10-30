@@ -71,7 +71,7 @@
 <priority>0.5</priority>
 </url>
 <url>
-<loc>https://pentagent-ai.github.io/PentAgent/docs/test/intruder</loc>
+<loc>https://pentagent-ai.github.io/PentAgent/docs/test/fuzzer</loc>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>

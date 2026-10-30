@@ -27,7 +27,7 @@ PentAgent runs on your machine. You bring your own model: an API key, or a local
 
 ### Test
 - [Repeater](https://pentagent-ai.github.io/PentAgent/docs/test/repeater/): Edit a request by hand, send it again, and compare what comes back.
-- [Intruder](https://pentagent-ai.github.io/PentAgent/docs/test/intruder/): Send one request many times, swapping in a list of values at the places you mark.
+- [Fuzzer](https://pentagent-ai.github.io/PentAgent/docs/test/fuzzer/): Send one request many times, swapping in a list of values at the places you mark.
 - [Scanner](https://pentagent-ai.github.io/PentAgent/docs/test/scanner/): Run a passive audit on captured traffic and review the issues it finds.
 - [Target & scope](https://pentagent-ai.github.io/PentAgent/docs/test/target/): Set which hosts are in scope, and browse the sitemap of what you've captured.
 - [Organizer](https://pentagent-ai.github.io/PentAgent/docs/test/organizer/): Keep interesting requests in collections with notes, tags and leads.
@@ -61,7 +61,7 @@ PentAgent runs on your machine. You bring your own model: an API key, or a local
 - [Lab browser](https://pentagent-ai.github.io/PentAgent/docs/settings/lab-browser/): How lab Chromium, the capture extension and proxy modes work.
 
 ### Reference
-- [Shortcuts](https://pentagent-ai.github.io/PentAgent/docs/reference/shortcuts/): Keyboard shortcuts for the workbench, Repeater and Intruder.
+- [Shortcuts](https://pentagent-ai.github.io/PentAgent/docs/reference/shortcuts/): Keyboard shortcuts for the workbench, Repeater and Fuzzer.
 - [Troubleshooting](https://pentagent-ai.github.io/PentAgent/docs/reference/troubleshooting/): Fixes for common install, sign-in, proxy and capture problems.
 - [FAQ](https://pentagent-ai.github.io/PentAgent/docs/reference/faq/): Short answers to common questions about the pilot.
 
