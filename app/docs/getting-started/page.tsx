@@ -24,7 +24,7 @@ export default function GettingStartedPage() {
         </li>
         <li>The GitHub account you used on your request.</li>
         <li>
-          A 64-bit Windows or 64-bit Linux computer (macOS is coming soon) with an internet connection for the first
+          A 64-bit Windows, macOS (Apple Silicon), or 64-bit Linux computer with an internet connection for the first
           launch.
         </li>
         <li>An app you own or have permission to test. A practice app on your own machine works well.</li>
@@ -34,7 +34,7 @@ export default function GettingStartedPage() {
       <Steps>
         <Step title="Install PentAgent">
           <p>
-            Download the pilot build for Windows or Linux and open PentAgent. The first launch sets up the
+            Download the pilot build for Windows, macOS, or Linux and open PentAgent. The first launch sets up the
             local engine and lab browser for you.{" "}
             <Link href="/docs/getting-started/install">Install</Link>
           </p>

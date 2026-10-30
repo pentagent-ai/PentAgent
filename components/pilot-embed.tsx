@@ -150,7 +150,7 @@ export function PilotEmbed() {
         <div className="min-w-0">
           <p className="text-[14.5px] font-medium text-ink">Finished submitting the form?</p>
           <p className="mt-1 text-xs leading-relaxed text-ink-muted">
-            Proceed to download PentAgent for Windows or Linux while we review your request.
+            Proceed to download PentAgent for Windows, macOS, or Linux while we review your request.
           </p>
         </div>
         <ButtonLink href={links.download} size="md" className="shrink-0">

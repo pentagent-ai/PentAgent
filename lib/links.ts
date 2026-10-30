@@ -23,7 +23,11 @@ export const links = {
   // Windows (64-bit)
   downloadWinZip: `${ASSET_BASE}/PentAgent-win-x64.zip`,
   downloadWinZipSha: `${ASSET_BASE}/PentAgent-win-x64.zip.sha256`,
-  // macOS (Apple Silicon): coming soon, no build in this release.
+  // macOS (Apple Silicon)
+  downloadMacDmg: `${ASSET_BASE}/PentAgent-mac-arm64.dmg`,
+  downloadMacDmgSha: `${ASSET_BASE}/PentAgent-mac-arm64.dmg.sha256`,
+  downloadMacZip: `${ASSET_BASE}/PentAgent-mac-arm64.zip`,
+  downloadMacZipSha: `${ASSET_BASE}/PentAgent-mac-arm64.zip.sha256`,
   // Linux (64-bit)
   downloadDeb: `${ASSET_BASE}/pentagent_amd64.deb`,
   downloadDebSha: `${ASSET_BASE}/pentagent_amd64.deb.sha256`,

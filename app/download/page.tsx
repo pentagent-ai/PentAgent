@@ -6,7 +6,7 @@ import { links } from "@/lib/links";
 export const metadata: Metadata = {
   title: "Download",
   description:
-    "Download the PentAgent pilot build for Windows and Linux. macOS is coming soon. Signing in needs an approved pilot account.",
+    "Download the PentAgent pilot build for Windows, macOS, and Linux. Signing in needs an approved pilot account.",
   alternates: { canonical: "/download" },
   openGraph: { url: "/download" },
 };
@@ -24,6 +24,29 @@ const platformGroups = [
         shaHref: links.downloadWinZipSha,
         sha256: "767946525eb01a5e1219e004a5ded8ec33afe63993a89d4b152a25b6cf2c974c",
         primary: true,
+      },
+    ],
+  },
+  {
+    os: "macOS",
+    arch: "Apple Silicon (arm64)",
+    note: "For Macs with Apple Silicon (M1 or later), macOS 13 or later. Drag PentAgent to Applications. On first launch, right-click PentAgent and choose Open.",
+    files: [
+      {
+        label: "macOS disk image (Apple Silicon)",
+        name: "PentAgent-mac-arm64.dmg",
+        href: links.downloadMacDmg,
+        shaHref: links.downloadMacDmgSha,
+        sha256: "5cee73fe72eda6635ebbc9a32556096660d3debe7231c01eb70ad2a17d700c97",
+        primary: true,
+      },
+      {
+        label: "macOS app archive (Apple Silicon)",
+        name: "PentAgent-mac-arm64.zip",
+        href: links.downloadMacZip,
+        shaHref: links.downloadMacZipSha,
+        sha256: "c57f9cb09cb50362a3de67cd34e3642043d64eea65fc64089ac022e972b8cd2f",
+        primary: false,
       },
     ],
   },
@@ -68,8 +91,8 @@ export default function DownloadPage() {
       </p>
       <h1 className="mt-5 text-balance text-4xl font-medium tracking-[-0.04em] text-ink md:text-5xl">Download</h1>
       <p className="mt-5 max-w-xl text-pretty text-lg leading-relaxed text-ink-muted">
-        Pilot builds for Windows and Linux. Python is bundled inside the app, and the first launch sets up the local
-        engine and lab browser automatically.
+        Pilot builds for Windows, macOS, and Linux. Python is bundled inside the app, and the first launch sets up the
+        local engine and lab browser automatically.
       </p>
       <p className="mt-3 font-mono text-xs text-ink-dim">Version {links.releaseVersion}</p>
 
@@ -112,16 +135,6 @@ export default function DownloadPage() {
             </div>
           </div>
         ))}
-        <div>
-          <div className="flex flex-wrap items-baseline justify-between gap-2 border-b border-line pb-3">
-            <h2 className="text-lg font-medium tracking-[-0.02em] text-ink">macOS</h2>
-            <span className="font-mono text-xs text-ink-dim">Apple Silicon (arm64)</span>
-          </div>
-          <div className="mt-4 rounded-[6px] border border-dashed border-line p-6">
-            <p className="text-[15px] font-medium text-ink-muted">Coming soon</p>
-            <p className="mt-1 text-xs leading-relaxed text-ink-dim">The macOS build will be listed here once it&rsquo;s ready.</p>
-          </div>
-        </div>
       </div>
 
       <p className="mt-10 text-[15px] leading-relaxed text-ink-muted">
@@ -136,7 +149,7 @@ export default function DownloadPage() {
         <a className="underline underline-offset-2 hover:text-ink" href={links.releases}>
           releases page
         </a>
-        . Step-by-step setup for Windows and Linux is in the{" "}
+        . Step-by-step setup for Windows, macOS, and Linux is in the{" "}
         <Link className="underline underline-offset-2 hover:text-ink" href="/docs/getting-started/install">
           install guide
         </Link>
