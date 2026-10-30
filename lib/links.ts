@@ -1,8 +1,7 @@
 // Every internal and external link on the site comes from this file.
 
-const RELEASE_TAG = "v0.1.0-trial10.7";
 const RELEASE_BASE = "https://github.com/pentagent-ai/PentAgent/releases";
-const ASSET_BASE = `${RELEASE_BASE}/download/${RELEASE_TAG}`;
+const ASSET_BASE = `${RELEASE_BASE}/latest/download`;
 
 export const links = {
   home: "/",
@@ -18,9 +17,9 @@ export const links = {
   acceptableUse: "/terms#acceptable-use",
   pilotForm: "https://airtable.com/app8sXqKI3zZSfOqn/pagbHLm1HcD8eoiuZ/form",
   pilotFormEmbed: "https://airtable.com/embed/app8sXqKI3zZSfOqn/pagbHLm1HcD8eoiuZ/form",
-  // Current public release. Assets are uploaded with these exact, version-less names.
+  // Latest public release assets. Upload with these exact, version-less names.
   releaseVersion: "0.1.0-trial10.7",
-  releases: `${RELEASE_BASE}/tag/${RELEASE_TAG}`,
+  releases: `${RELEASE_BASE}/latest`,
   // Windows (64-bit)
   downloadWinZip: `${ASSET_BASE}/PentAgent-win-x64.zip`,
   downloadWinZipSha: `${ASSET_BASE}/PentAgent-win-x64.zip.sha256`,
