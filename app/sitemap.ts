@@ -11,6 +11,7 @@ const routes: { path: string; priority: number }[] = [
     priority: item.href.startsWith("/docs/getting-started") ? 0.7 : 0.5,
   })),
   { path: "/privacy", priority: 0.3 },
+  { path: "/privacy-safety", priority: 0.4 },
   { path: "/terms", priority: 0.3 },
 ];
 

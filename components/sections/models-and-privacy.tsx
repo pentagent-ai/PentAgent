@@ -1,4 +1,6 @@
+import Link from "next/link";
 import { Figure, SectionHeading, SectionRule } from "@/components/section-heading";
+import { links } from "@/lib/links";
 
 const points = [
   "Bring your own key for the model provider you choose, or point PentAgent at a local or self-hosted model.",
@@ -25,6 +27,14 @@ export function ModelsAndPrivacy() {
               </li>
             ))}
           </ul>
+          <p className="mt-8 text-[15px]">
+            <Link
+              className="text-ink underline decoration-line-strong underline-offset-4 hover:decoration-accent"
+              href={links.privacySafety}
+            >
+              Privacy &amp; safety: what leaves your computer and how live requests are approved →
+            </Link>
+          </p>
         </div>
 
         <Figure label="Fig. 03 / Data path" meta="what leaves your machine" bodyClassName="ruled p-6 sm:p-8">

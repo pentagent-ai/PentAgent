@@ -13,6 +13,7 @@ export const links = {
   download: "/download",
   pilot: "/pilot",
   privacy: "/privacy",
+  privacySafety: "/privacy-safety",
   terms: "/terms",
   acceptableUse: "/terms#acceptable-use",
   pilotForm: "https://airtable.com/app8sXqKI3zZSfOqn/pagbHLm1HcD8eoiuZ/form",
@@ -59,5 +60,6 @@ export const footerLinks = {
   legal: [
     { label: "Terms", href: links.terms },
     { label: "Privacy", href: links.privacy },
+    { label: "Privacy & safety", href: links.privacySafety },
   ],
 } as const;
