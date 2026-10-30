@@ -13,7 +13,7 @@ export function ScopePanel() {
         <span className="py-1 text-center text-ink-muted">Advanced</span>
       </div>
       <p className="mt-2.5 text-[11px] leading-relaxed text-ink-muted">
-        One origin per line. Repeater, Intruder and the agent only send to hosts listed here.
+        One origin per line. Repeater, Fuzzer and the agent only send to hosts listed here.
       </p>
       <div className="mt-2.5 rounded-md border border-line bg-canvas px-2.5 py-2 font-mono text-[11.5px] leading-[1.7] text-ink">
         {scopeText.map((line) => (

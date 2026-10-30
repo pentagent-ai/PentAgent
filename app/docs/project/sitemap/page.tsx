@@ -29,7 +29,7 @@ export default function SitemapPage() {
       <p>
         The UI Map is separate from HTTP history. Proxy traffic alone does not create pages or buttons — only the lab
         browser extension does. Open it with the project selected, enter a <Ui>Target URL</Ui>, set{" "}
-        <Ui>Proxy mode</Ui> (<Ui>Off (fast explore)</Ui>, <Ui>Optional</Ui>, or <Ui>Required (MITM)</Ui>), then click{" "}
+        <Ui>Proxy mode</Ui> (<Ui>Off (fast explore)</Ui>, <Ui>Optional</Ui>, or <Ui>Required (through the proxy)</Ui>), then click{" "}
         <Ui>Open lab browser</Ui>. Browse only in that window; the map updates live.
       </p>
       <InfoTable
@@ -38,7 +38,7 @@ export default function SitemapPage() {
           [<Ui key="a">Refresh map</Ui>, "Reload pages, controls and action evidence packs."],
           [<Ui key="b">Clear map &amp; history</Ui>, "Deletes UI map data and HTTP history for this project (asks first)."],
           [<Ui key="c">Exploration</Ui>, "Journeys from Exploration feed UI→HTTP bindings after a rebuild."],
-          [<Ui key="d">Repeat under proxy ×3</Ui>, "Replays a selected flow through the MITM listener."],
+          [<Ui key="d">Repeat under proxy ×3</Ui>, "Replays a selected flow through the proxy listener."],
           [<Ui key="e">Send to Chat / Pin to plan</Ui>, "Share a flow with the AI assistant or pin it to a plan."],
         ]}
       />

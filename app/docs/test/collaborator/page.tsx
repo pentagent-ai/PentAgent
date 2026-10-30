@@ -30,7 +30,7 @@ export default function CollaboratorPage() {
       <Steps>
         <Step title="Choose HTTP or DNS">Then click <Ui>Generate</Ui>.</Step>
         <Step title="Copy or insert">
-          <Ui>Copy payload</Ui>, or <Ui>Insert into Repeater</Ui> / <Ui>Insert into Intruder</Ui>. Or use{" "}
+          <Ui>Copy payload</Ui>, or <Ui>Insert into Repeater</Ui> / <Ui>Insert into Fuzzer</Ui>. Or use{" "}
           <Ui>Insert payload into Repeater</Ui> to put it into a URL query, an <code>X-Collaborator</code> header, or
           the body.
         </Step>

@@ -41,7 +41,7 @@ export default function ImportPage() {
 
       <H2 id="portable-engagement">Move a whole project</H2>
       <p>
-        A <code>.pentagent.zip</code> holds a project&rsquo;s traffic, Intruder setups, scope and settings.
+        A <code>.pentagent.zip</code> holds a project&rsquo;s traffic, Fuzzer setups, scope and settings.
       </p>
       <ul>
         <li><Ui>Export engagement</Ui> downloads the current project as one file.</li>

@@ -13,13 +13,13 @@ import {
   sitemapPages,
 } from "@/lib/demo-data";
 
-export type ToolTab = "proxy" | "repeater" | "intruder" | "scanner";
+export type ToolTab = "proxy" | "repeater" | "fuzzer" | "scanner";
 
 export function ToolTabs({ active, onSelect }: { active: ToolTab | null; onSelect: (t: ToolTab) => void }) {
   const tabs: { value: ToolTab; label: string; icon: IconName; live: boolean }[] = [
     { value: "proxy", label: "Proxy", icon: "proxy", live: true },
     { value: "repeater", label: "Repeater", icon: "repeater", live: true },
-    { value: "intruder", label: "Intruder", icon: "intruder", live: false },
+    { value: "fuzzer", label: "Fuzzer", icon: "fuzzer", live: false },
     { value: "scanner", label: "Scanner", icon: "scanner", live: false },
   ];
   return (

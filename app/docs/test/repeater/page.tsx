@@ -21,7 +21,7 @@ export default function RepeaterPage() {
       <H2 id="open-a-request">Open a request in Repeater</H2>
       <ul>
         <li>In <Link href="/docs/capture/http-history">HTTP history</Link>, click the <Ui>Send to Repeater</Ui> arrow, or right-click a row and send it.</li>
-        <li>Double-click a row in Intruder results, the Target sitemap, or other tables that say <Ui>Double-click to send to Repeater</Ui>.</li>
+        <li>Double-click a row in Fuzzer results, the Target sitemap, or other tables that say <Ui>Double-click to send to Repeater</Ui>.</li>
         <li>From the <Ui>Inspector</Ui>, click <Ui>Open in Repeater with changes</Ui>.</li>
         <li>Or paste a raw request into an empty tab.</li>
       </ul>

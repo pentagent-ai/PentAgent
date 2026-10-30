@@ -17,7 +17,7 @@ export type HistoryEntry = {
 
 export const demoHost = "demo-shop.test";
 export const demoProject = "Storefront audit";
-export const listenerLabel = "MITM 127.0.0.1:8080";
+export const listenerLabel = "Listening 127.0.0.1:8080";
 export const scopeSummary = "Scope: 1 host · 2 rules";
 
 export const PENDING_PATCH_ID = 999;

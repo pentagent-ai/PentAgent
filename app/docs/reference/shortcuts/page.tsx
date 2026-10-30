@@ -5,7 +5,7 @@ import { DocPage } from "@/components/docs/doc-page";
 
 export const metadata: Metadata = {
   title: "Shortcuts",
-  description: "Keyboard shortcuts for the workbench, Repeater and Intruder.",
+  description: "Keyboard shortcuts for the workbench, Repeater and Fuzzer.",
   alternates: { canonical: "/docs/reference/shortcuts" },
   openGraph: { url: "/docs/reference/shortcuts" },
 };
@@ -36,7 +36,7 @@ export default function ShortcutsPage() {
           [<Keys keys={["F"]} />, "Forward selected intercept (Proxy)"],
           [<Keys keys={["D"]} />, "Drop selected intercept"],
           [<Keys keys={["Ctrl", "F"]} />, "Forward and intercept next"],
-          ["Right-click row", "Send to Repeater / Intruder / Chat / Organizer / Comparer / Decoder"],
+          ["Right-click row", "Send to Repeater / Fuzzer / Chat / Organizer / Comparer / Decoder"],
           ["Double-click table row", "Select row and open detail pane"],
           ["Double-click Repeater tab", "Rename tab"],
           ["Double-click Dashboard task", "Rename task"],
@@ -54,7 +54,7 @@ export default function ShortcutsPage() {
         ]}
       />
 
-      <H2 id="intruder">Intruder</H2>
+      <H2 id="fuzzer">Fuzzer</H2>
       <InfoTable
         head={["Keys", "Action"]}
         rows={[

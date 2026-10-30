@@ -14,7 +14,7 @@ export const demo = {
 };
 
 const ICONS: Record<string, IconName> = {
-  Proxy: "proxy", Repeater: "repeater", Intruder: "intruder", Scanner: "scanner", Target: "target", Organizer: "organizer",
+  Proxy: "proxy", Repeater: "repeater", Fuzzer: "fuzzer", Scanner: "scanner", Target: "target", Organizer: "organizer",
   History: "history", Sitemap: "sitemap", Records: "findings", Plans: "plans", Kits: "kits", Dashboard: "dashboard",
   Decoder: "decoder", Comparer: "comparer", Sequencer: "sequencer", Collaborator: "collaborator", Ask: "ask", Plan: "plan", Agent: "agent",
 };
@@ -107,7 +107,7 @@ export function Sidebar({ active, project, listenerOn = false }: { active?: stri
         <Spot id="listener" n={2} block className="mb-2 space-y-1.5 rounded border border-[var(--border)] bg-[var(--bg)] p-1.5">
           <div className="flex items-center gap-1.5 text-[10px]">
             <span className={`inline-block size-1.5 rounded-full ${listenerOn ? "bg-[var(--success)]" : "bg-[var(--disabled)]"}`} />
-            <span className="text-[var(--muted)]">{listenerOn ? "MITM 127.0.0.1:8088" : L.listener.off}</span>
+            <span className="text-[var(--muted)]">{listenerOn ? "Listening 127.0.0.1:8088" : L.listener.off}</span>
           </div>
           <div className="flex gap-1">
             <span className="rounded border border-[var(--border)] px-1.5 py-0.5 text-[9px]">{L.listener.lab}</span>

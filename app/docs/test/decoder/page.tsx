@@ -38,8 +38,8 @@ export default function DecoderPage() {
 
       <H2 id="send-on">Send the result on</H2>
       <ul>
-        <li><Ui>Send output → Intruder body</Ui> loads the output into the Intruder request body.</li>
-        <li><Ui>Send output → Intruder payloads</Ui> loads each output line into Intruder payload set 1.</li>
+        <li><Ui>Send output → Fuzzer body</Ui> loads the output into the Fuzzer request body.</li>
+        <li><Ui>Send output → Fuzzer payloads</Ui> loads each output line into Fuzzer payload set 1.</li>
       </ul>
     </DocPage>
   );

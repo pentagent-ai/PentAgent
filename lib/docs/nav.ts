@@ -64,7 +64,7 @@ export const docsNav: DocNavGroup[] = [
     title: "Test",
     items: [
       { title: "Repeater", href: "/docs/test/repeater", description: "Edit a request by hand, send it again, and compare what comes back." },
-      { title: "Intruder", href: "/docs/test/intruder", description: "Send one request many times, swapping in a list of values at the places you mark." },
+      { title: "Fuzzer", href: "/docs/test/fuzzer", description: "Send one request many times, swapping in a list of values at the places you mark." },
       { title: "Scanner", href: "/docs/test/scanner", description: "Run a passive audit on captured traffic and review the issues it finds." },
       { title: "Target & scope", href: "/docs/test/target", description: "Set which hosts are in scope, and browse the sitemap of what you've captured." },
       { title: "Organizer", href: "/docs/test/organizer", description: "Keep interesting requests in collections with notes, tags and leads." },
@@ -111,7 +111,7 @@ export const docsNav: DocNavGroup[] = [
   {
     title: "Reference",
     items: [
-      { title: "Shortcuts", href: "/docs/reference/shortcuts", description: "Keyboard shortcuts for the workbench, Repeater and Intruder." },
+      { title: "Shortcuts", href: "/docs/reference/shortcuts", description: "Keyboard shortcuts for the workbench, Repeater and Fuzzer." },
       { title: "Troubleshooting", href: "/docs/reference/troubleshooting", description: "Fixes for common install, sign-in, proxy and capture problems." },
       { title: "FAQ", href: "/docs/reference/faq", description: "Short answers to common questions about the pilot." },
     ],

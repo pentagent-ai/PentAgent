@@ -6,7 +6,7 @@ import { DocPage } from "@/components/docs/doc-page";
 
 export const metadata: Metadata = {
   title: "Install",
-  description: "Download the PentAgent pilot build for Windows, macOS, or Linux, start it, and open PentAgent.",
+  description: "Download the PentAgent pilot build for Windows or Linux, start it, and open PentAgent.",
   alternates: { canonical: "/docs/getting-started/install" },
   openGraph: { url: "/docs/getting-started/install" },
 };
@@ -17,7 +17,7 @@ export default function InstallPage() {
       <H2 id="what-you-need">What you need</H2>
       <ul>
         <li>
-          <strong>Windows (64-bit), macOS (Apple Silicon), or Linux (64-bit).</strong> PentAgent bundles its own Python
+          <strong>Windows (64-bit) or Linux (64-bit).</strong> macOS (Apple Silicon) is coming soon. PentAgent bundles its own Python
           runtime inside the desktop app, so you don&rsquo;t need to install Python yourself.
         </li>
         <li>
@@ -49,9 +49,6 @@ export default function InstallPage() {
             code={`# Windows (PowerShell)
 Get-FileHash .\\PentAgent-win-x64.zip -Algorithm SHA256
 
-# macOS
-shasum -a 256 -c PentAgent-mac-arm64.dmg.sha256
-
 # Linux
 sha256sum -c pentagent_amd64.deb.sha256`}
           />
@@ -78,27 +75,10 @@ sha256sum -c pentagent_amd64.deb.sha256`}
       </Steps>
 
       <H3 id="macos">macOS (Apple Silicon)</H3>
-      <Steps>
-        <Step title="Move PentAgent to Applications">
-          <p>
-            Open <code>PentAgent-mac-arm64.dmg</code> and drag <Ui>PentAgent</Ui> into <Ui>Applications</Ui> (or unpack{" "}
-            <code>PentAgent-mac-arm64.zip</code> and move <Ui>PentAgent.app</Ui> into <Ui>Applications</Ui>).
-          </p>
-        </Step>
-        <Step title="Open the app the first time">
-          <p>
-            Pilot builds are ad-hoc signed rather than Apple-notarized. For the first launch, open{" "}
-            <Ui>Applications</Ui>, <strong>right-click</strong> (or Control-click) <Ui>PentAgent</Ui> and choose{" "}
-            <Ui>Open</Ui>, then click <Ui>Open</Ui> in the dialog (or allow it under{" "}
-            <Ui>System Settings › Privacy &amp; Security › Open Anyway</Ui>).
-          </p>
-          <p>
-            If macOS still blocks the app after a browser download, clear the quarantine attribute in Terminal and open
-            it again:
-          </p>
-          <CodeBlock code="xattr -dr com.apple.quarantine /Applications/PentAgent.app" />
-        </Step>
-      </Steps>
+      <p>
+        The macOS build is coming soon. This section will have the setup steps once it&rsquo;s on the{" "}
+        <Link href="/download">download page</Link>.
+      </p>
 
       <H3 id="linux">Linux (64-bit)</H3>
       <p>Pick whichever package fits your distribution:</p>

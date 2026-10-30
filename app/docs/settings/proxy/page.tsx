@@ -23,7 +23,7 @@ export default function ProxySettingsPage() {
           [<Ui key="b">Lab browser</Ui>, <><Ui>Proxy mode</Ui> Off / Optional / Required, browser pick, <Ui>Open lab Chromium</Ui>, <Ui>Stop listener</Ui>, <Ui>Reset</Ui>.</>],
           [<Ui key="c">Active gateway</Ui>, "Status and address of the running listener."],
           [<Ui key="d">PentAgent CA certificate</Ui>, <><Ui>Download CA certificate</Ui> (<code>pentagent-ca-cert.crt</code>). Lab Chromium trusts it automatically; download for manual setups.</>],
-          [<Ui key="e">Proxy options</Ui>, "Upstream proxy chain and TLS pass-through hosts (no MITM). Restart the listener after changes."],
+          [<Ui key="e">Proxy options</Ui>, "Upstream proxy chain and TLS pass-through hosts (no proxy decryption). Restart the listener after changes."],
         ]}
       />
     </DocPage>

@@ -13,7 +13,7 @@ export const topBar = {
   createProject: "Create project",
   proxyOff: "Proxy Off",
   proxyActive: "Proxy Active",
-  proxyTitle: "Start proxy listener (MITM capture)",
+  proxyTitle: "Start proxy listener (HTTPS capture)",
   activity: "Activity",
   records: "Records",
 };
@@ -32,7 +32,7 @@ export const listener = {
 export const navGroups = [
   {
     label: "Workbench",
-    primary: ["Proxy", "Repeater", "Intruder", "Scanner"],
+    primary: ["Proxy", "Repeater", "Fuzzer", "Scanner"],
     secondary: ["Target", "Organizer", "History"],
   },
   { label: "Project", primary: ["Sitemap", "Records", "Plans", "Kits"], extras: ["Dashboard", "Decoder", "Comparer", "Sequencer", "Collaborator"] },
@@ -40,7 +40,7 @@ export const navGroups = [
 ] as const;
 
 /** components/WorkspaceToolTabs.tsx */
-export const toolTabs = ["Proxy", "Repeater", "Intruder", "Scanner"] as const;
+export const toolTabs = ["Proxy", "Repeater", "Fuzzer", "Scanner"] as const;
 
 /** panes/ProxyPane.tsx sub-tabs */
 export const proxySubTabs = ["Intercept", "HTTP history", "WebSockets", "Match / Replace", "Import"] as const;
@@ -50,7 +50,7 @@ export const onboarding = {
   title: "Get your first capture",
   sub: "Four steps — stay in-app. Prefer the lab browser over system proxy docs.",
   steps: {
-    proxy: { title: "Start proxy", action: "Start proxy", hintOff: "MITM listener on 127.0.0.1:8088", hintOn: "Listening 127.0.0.1:8088" },
+    proxy: { title: "Start proxy", action: "Start proxy", hintOff: "Listener on 127.0.0.1:8088", hintOn: "Listening 127.0.0.1:8088" },
     ca: {
       title: "CA certificate",
       action: "Download CA",
@@ -196,7 +196,7 @@ export const settings = {
 export const intercept = {
   toggle: { on: "Intercept is on", off: "Intercept is off" },
   bannerOn: (n: number) => `Intercept is ON — ${n} item(s) in queue. Shortcuts: Forward (F), Drop (D), Forward & intercept next (Ctrl+F).`,
-  notCapturing: "Intercept only works while the listener is in MITM mode. Turning it on starts MITM automatically and opens lab Chromium if needed. Daily Chrome/Brave is not linked.",
+  notCapturing: "Intercept only works while the listener is capturing HTTPS. Turning it on starts capture automatically and opens lab Chromium if needed. Daily Chrome/Brave is not linked.",
   labLinked: "Lab Chromium is linked. Reload the target in that window — the page waits until you Forward or Drop (static assets skipped by default).",
   options: {
     requests: "Intercept requests",
@@ -281,7 +281,7 @@ export const websockets = {
 
 /** panes/MatchReplacePanel.tsx */
 export const matchReplace = {
-  intro: "Rules run automatically in MITM capture before intercept / history.",
+  intro: "Rules run automatically in HTTPS capture before intercept / history.",
   name: "Name",
   target: ["Request", "Response", "Both"],
   where: ["Any", "URL", "Headers", "Body"],
@@ -302,7 +302,7 @@ export const importPanel = {
   done: (n: number, hosts: string) => `Imported ${n} transaction(s). Hosts: ${hosts}`,
   started: "Import started — track progress on the Dashboard",
   engagement: "Portable engagement",
-  engagementHelp: "Export this project (traffic + Intruder configs + scope/settings) as a single .pentagent.zip file, or import one as a brand-new project.",
+  engagementHelp: "Export this project (traffic + Fuzzer configs + scope/settings) as a single .pentagent.zip file, or import one as a brand-new project.",
   export: "Export engagement",
   importZip: "Import engagement zip",
 };

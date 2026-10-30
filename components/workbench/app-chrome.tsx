@@ -8,7 +8,7 @@ import { demoHost, demoProject, listenerLabel, scopeSummary } from "@/lib/demo-d
 export type NavKey =
   | "proxy"
   | "repeater"
-  | "intruder"
+  | "fuzzer"
   | "scanner"
   | "target"
   | "organizer"
@@ -37,7 +37,7 @@ export const navGroups: { label: string; primary: Entry[]; secondary?: Entry[]; 
     primary: [
       { key: "proxy", label: "Proxy", icon: "proxy", live: true },
       { key: "repeater", label: "Repeater", icon: "repeater", live: true },
-      { key: "intruder", label: "Intruder", icon: "intruder" },
+      { key: "fuzzer", label: "Fuzzer", icon: "fuzzer" },
       { key: "scanner", label: "Scanner", icon: "scanner" },
     ],
     add: true,

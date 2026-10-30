@@ -25,7 +25,7 @@ export default function FirstRunPage() {
           <><Ui>New project</Ui> field and its <Ui>+</Ui> button.</>,
           <>The proxy button. It reads <Ui>Proxy Off</Ui> until you start capturing, and turns on once a project is open.</>,
           <>The left menu, grouped into <Ui>Workbench</Ui>, <Ui>Project</Ui> and <Ui>AI Agent</Ui>.</>,
-          <>Your workspace, with the <Ui>Proxy</Ui>, <Ui>Repeater</Ui>, <Ui>Intruder</Ui> and <Ui>Scanner</Ui> tabs on top.</>,
+          <>Your workspace, with the <Ui>Proxy</Ui>, <Ui>Repeater</Ui>, <Ui>Fuzzer</Ui> and <Ui>Scanner</Ui> tabs on top.</>,
           <><Ui>Inspector</Ui>, which shows params, cookies and headers for the message you select.</>,
           <><Ui>AI Assistant</Ui>, with Ask, Plan and Agent modes.</>,
           <>The listener strip: whether the proxy is listening, plus <Ui>Lab</Ui> and <Ui>Settings</Ui> shortcuts.</>,
