@@ -40,7 +40,7 @@ export default function TroubleshootingPage() {
             "GitHub sign-in never returns to the app",
             "Make sure you finished approving on GitHub and allowed your browser to open the pentagent:// link.",
           ],
-          ["Not approved yet", "Apply for pilot access, then wait for approval. The app rechecks every few hours."],
+          ["Not approved yet", "Click Check again. If it stays, the account may have been blocked for misuse; contact us with the username shown."],
           ["Update required", "Download the latest pilot build and replace your install."],
         ]}
       />

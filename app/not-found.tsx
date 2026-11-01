@@ -15,14 +15,14 @@ export default function NotFound() {
         This page isn&rsquo;t here.
       </h1>
       <p className="mt-5 max-w-xl text-pretty text-lg leading-relaxed text-ink-muted">
-        The link may be out of date, or the page may have moved. You can head back to the start or request pilot access.
+        The link may be out of date, or the page may have moved. You can head back to the start or download PentAgent.
       </p>
       <div className="mt-10 flex flex-col gap-3 sm:flex-row">
         <ButtonLink href={links.home} size="lg">
           Back to home
         </ButtonLink>
-        <ButtonLink href={links.pilot} size="lg" variant="secondary">
-          Request pilot access
+        <ButtonLink href={links.download} size="lg" variant="secondary">
+          Download PentAgent
         </ButtonLink>
       </div>
     </section>

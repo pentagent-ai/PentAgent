@@ -14,17 +14,17 @@ export function PilotCta() {
           <span aria-hidden="true" className="reg-mark reg-br" />
           <div>
             <h2 className="text-balance text-[2rem] font-medium leading-[1.06] tracking-[-0.04em] text-ink sm:text-[2.75rem]">
-              PentAgent is in an invite-only pilot.
+              PentAgent is in a free, open pilot.
             </h2>
             <p className="mt-5 max-w-lg text-pretty text-[16.5px] leading-relaxed text-ink-muted">
-              We review every request by hand and invite people when there&rsquo;s a good fit.
+              Download it for Windows, macOS or Linux and sign in with your GitHub account. No application needed.
             </p>
           </div>
 
           <div className="lg:justify-self-end">
             <div className="flex flex-col gap-3 sm:flex-row lg:justify-end">
-              <ButtonLink href={links.pilot} size="lg">
-                Request pilot access
+              <ButtonLink href={links.download} size="lg">
+                Download PentAgent
               </ButtonLink>
             </div>
           </div>

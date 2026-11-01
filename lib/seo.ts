@@ -42,7 +42,7 @@ export const productAnswers = [
   {
     question: "Who is the pilot for?",
     answer:
-      "PentAgent is an invite-only pilot. Every request is reviewed by hand, and people are invited when there is a good fit. It is built for cybersecurity students, junior pentesters and bug bounty hunters who want to understand an app from real traffic. Approved members sign in with GitHub.",
+      "PentAgent is in a free, open pilot. It is built for cybersecurity students, junior pentesters and bug bounty hunters who want to understand an app from real traffic. Anyone can download it and sign in with GitHub.",
   },
   {
     question: "What can I test?",
@@ -91,9 +91,9 @@ export function siteJsonLd() {
         isPartOf: { "@id": siteId },
         offers: {
           "@type": "Offer",
-          availability: "https://schema.org/LimitedAvailability",
-          url: absolute("/pilot"),
-          description: "Invite-only pilot. Request access. There is no public price.",
+          availability: "https://schema.org/InStock",
+          url: absolute("/download"),
+          description: "Free, open pilot. Sign in with GitHub.",
         },
       },
     ],

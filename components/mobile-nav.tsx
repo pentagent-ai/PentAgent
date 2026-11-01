@@ -64,11 +64,11 @@ export function MobileNav({ links: items }: { links: readonly { label: string; h
               </Link>
             ))}
             <Link
-              href={links.pilot}
+              href={links.download}
               onClick={() => setOpen(false)}
               className="mt-6 inline-flex h-11 items-center justify-center rounded-[5px] bg-accent text-sm font-medium text-accent-ink"
             >
-              Request pilot access
+              Download PentAgent
             </Link>
           </nav>
         </div>

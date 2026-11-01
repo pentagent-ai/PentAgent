@@ -36,7 +36,7 @@ export const docsNav: DocNavGroup[] = [
       {
         title: "Sign in",
         href: "/docs/getting-started/sign-in",
-        description: "Sign in with GitHub and what happens while your access is being approved.",
+        description: "Sign in with any GitHub account, and what the access checks do.",
       },
       {
         title: "Welcome screen",

@@ -29,11 +29,11 @@ export function SiteHeader() {
         </nav>
 
         <div className="flex items-center gap-2">
-          <ButtonLink href={links.pilot} size="sm" className="max-sm:hidden">
-            Request pilot access
+          <ButtonLink href={links.download} size="sm" className="max-sm:hidden">
+            Download PentAgent
           </ButtonLink>
-          <ButtonLink href={links.pilot} size="sm" className="sm:hidden">
-            Request access
+          <ButtonLink href={links.download} size="sm" className="sm:hidden">
+            Download
           </ButtonLink>
           <MobileNav links={primaryNav} />
         </div>

@@ -6,7 +6,7 @@ import { links } from "@/lib/links";
 export const metadata: Metadata = {
   title: "Download",
   description:
-    "Download the PentAgent pilot build for Windows, macOS, and Linux. Signing in needs an approved pilot account.",
+    "Download the free PentAgent pilot build for Windows, macOS, and Linux. Sign in with any GitHub account.",
   alternates: { canonical: "/download" },
   openGraph: { url: "/download" },
 };
@@ -138,9 +138,9 @@ export default function DownloadPage() {
       </div>
 
       <p className="mt-10 text-[15px] leading-relaxed text-ink-muted">
-        The app needs an approved pilot account to sign in. Don&rsquo;t have one yet?{" "}
-        <Link className="text-ink underline decoration-line-strong underline-offset-4 hover:decoration-accent" href={links.pilot}>
-          Request pilot access
+        The pilot is free. Sign in with any GitHub account, no approval needed.{" "}
+        <Link className="text-ink underline decoration-line-strong underline-offset-4 hover:decoration-accent" href="/docs/getting-started/sign-in">
+          How sign-in works
         </Link>
         .
       </p>

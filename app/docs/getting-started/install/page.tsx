@@ -28,8 +28,8 @@ export default function InstallPage() {
           <strong>About 2 GB of free disk space</strong> for the app, its local environment, and the lab browser.
         </li>
         <li>
-          <strong>Pilot access.</strong> Anyone can download the build, but signing in needs an approved pilot account.
-          If you haven&rsquo;t applied yet, <Link href="/pilot">request pilot access</Link>.
+          <strong>A GitHub account.</strong> The pilot is free and open: anyone can download the build and sign in
+          with GitHub. There&rsquo;s nothing to apply for.
         </li>
       </ul>
 

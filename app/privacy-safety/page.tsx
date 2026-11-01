@@ -70,10 +70,11 @@ export default function PrivacySafetyPage() {
                 responses and notes you send to it in Ask, Plan or Agent, plus your API key for that provider.
               </>,
               <>
-                <strong className="font-medium text-ink">To our sign-in service:</strong> your GitHub sign-in, the check
-                that your account is approved for the pilot, your Terms and Privacy acceptance, and checks for app
-                updates and pilot settings. It uses your GitHub name, username, email and profile picture. It never
-                receives captured traffic, projects or API keys.
+                <strong className="font-medium text-ink">To our sign-in service:</strong> your GitHub sign-in, your Terms and
+                Privacy acceptance, and checks for app updates and pilot settings. There is no approval step: any GitHub
+                account can sign in. It records your GitHub username, email and the times of your first and latest
+                sign-in, so we can count users and block accounts that misuse PentAgent. The app also shows your GitHub
+                name and profile picture. It never receives captured traffic, projects or API keys.
               </>,
               <>
                 <strong className="font-medium text-ink">Anonymous usage analytics (PostHog, EU):</strong> these start

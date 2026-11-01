@@ -21,7 +21,7 @@ export default function FaqPage() {
 
       <H2 id="pilot">Who can use the pilot?</H2>
       <p>
-        Approved pilot participants who sign in with GitHub. See{" "}
+        Anyone with a GitHub account. The pilot is free and there&rsquo;s no approval step. See{" "}
         <Link href="/docs/getting-started/sign-in">Sign in</Link>.
       </p>
 

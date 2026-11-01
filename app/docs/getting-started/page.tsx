@@ -19,10 +19,7 @@ export default function GettingStartedPage() {
 
       <H2 id="before-you-begin">Before you begin</H2>
       <ul>
-        <li>
-          An approved pilot request. If you don&rsquo;t have one yet, <Link href="/pilot">request pilot access</Link>.
-        </li>
-        <li>The GitHub account you used on your request.</li>
+        <li>A GitHub account. The pilot is free and open, so there&rsquo;s nothing to apply for.</li>
         <li>
           A 64-bit Windows, macOS (Apple Silicon), or 64-bit Linux computer with an internet connection for the first
           launch.
@@ -41,7 +38,7 @@ export default function GettingStartedPage() {
         </Step>
         <Step title="Sign in with GitHub">
           <p>
-            PentAgent checks that your account is approved for the pilot.{" "}
+            Any GitHub account works. There&rsquo;s no approval step.{" "}
             <Link href="/docs/getting-started/sign-in">Sign in</Link>
           </p>
         </Step>

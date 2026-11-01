@@ -41,8 +41,9 @@ export default function TermsPage() {
 
       <LegalSection id="pilot" title="The pilot">
         <p>
-          PentAgent is in an invite-only pilot. Things will change, and some features may not work perfectly yet. We may
-          pause or end pilot access, and we&rsquo;ll let you know when we can. Please keep your sign-in to yourself.
+          PentAgent is in a free, open pilot. Things will change, and some features may not work perfectly yet. We may
+          pause or end pilot access, and we may block accounts that misuse PentAgent or break these terms. Please keep
+          your sign-in to yourself.
         </p>
       </LegalSection>
 

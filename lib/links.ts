@@ -16,8 +16,6 @@ export const links = {
   privacySafety: "/privacy-safety",
   terms: "/terms",
   acceptableUse: "/terms#acceptable-use",
-  pilotForm: "https://airtable.com/app8sXqKI3zZSfOqn/pagbHLm1HcD8eoiuZ/form",
-  pilotFormEmbed: "https://airtable.com/embed/app8sXqKI3zZSfOqn/pagbHLm1HcD8eoiuZ/form",
   // Latest public release assets. Upload with these exact, version-less names.
   releaseVersion: "0.1.0-trial10.7",
   releases: `${RELEASE_BASE}/latest`,
@@ -55,7 +53,7 @@ export const footerLinks = {
     { label: "Docs", href: links.docs },
   ],
   access: [
-    { label: "Request pilot access", href: links.pilot },
+    { label: "Download", href: links.download },
   ],
   legal: [
     { label: "Terms", href: links.terms },

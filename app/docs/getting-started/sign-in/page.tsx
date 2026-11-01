@@ -5,7 +5,7 @@ import { DocPage } from "@/components/docs/doc-page";
 
 export const metadata: Metadata = {
   title: "Sign in",
-  description: "Sign in to PentAgent with GitHub, and what happens while your pilot access is being approved.",
+  description: "Sign in to PentAgent with any GitHub account. The pilot is free and open.",
   alternates: { canonical: "/docs/getting-started/sign-in" },
   openGraph: { url: "/docs/getting-started/sign-in" },
 };
@@ -15,7 +15,7 @@ export default function SignInPage() {
     <DocPage href="/docs/getting-started/sign-in">
       <p>
         PentAgent asks you to sign in each time it can&rsquo;t find a saved session, for example on the first launch
-        or after you sign out. Signing in lets PentAgent confirm that your account is part of the pilot.
+        or after you sign out. The pilot is free and open: any GitHub account can sign in, with no approval step.
       </p>
 
 
@@ -28,14 +28,12 @@ export default function SignInPage() {
         </Step>
         <Step title="Approve on GitHub">
           <p>
-            Sign in to GitHub if you aren&rsquo;t already, and approve PentAgent. Use the GitHub account from your pilot
-            request, since that&rsquo;s the one on the approved list.
+            Sign in to GitHub if you aren&rsquo;t already, and approve PentAgent. Any GitHub account works.
           </p>
         </Step>
         <Step title="Back to PentAgent">
           <p>
-            GitHub sends you back to PentAgent, which checks your access. If you&rsquo;re approved and it&rsquo;s your
-            first time, you&rsquo;ll see the <Link href="/docs/getting-started/welcome-screen">welcome screen</Link>{" "}
+            GitHub sends you back to PentAgent, which checks your access. If it&rsquo;s your first time, you&rsquo;ll see the <Link href="/docs/getting-started/welcome-screen">welcome screen</Link>{" "}
             next. After that, PentAgent opens straight to your workspace.
           </p>
         </Step>
@@ -43,8 +41,9 @@ export default function SignInPage() {
 
       <Callout kind="note" title="What PentAgent gets from GitHub">
         <p>
-          Your name, GitHub username, email address and profile picture. PentAgent uses them to check your access and
-          to show who&rsquo;s signed in. It doesn&rsquo;t ask for access to your repositories.
+          Your name, GitHub username, email address and profile picture. PentAgent uses them to show who&rsquo;s signed
+          in. Our server records your GitHub username, email and the times of your first and latest sign-in, so we can
+          count users and block accounts that misuse PentAgent. It doesn&rsquo;t ask for access to your repositories.
         </p>
       </Callout>
 
@@ -54,32 +53,29 @@ export default function SignInPage() {
 
       <H2 id="access-checks">How access checks work</H2>
       <p>
-        Right after you sign in, PentAgent asks our server whether your account is on the pilot list. It checks again
-        every few hours while the app is open, and whenever you come back to the PentAgent window.
+        Right after you sign in, PentAgent asks our server whether your account can use the pilot. Every GitHub
+        account can, unless it has been blocked for misuse. It checks again every few hours while the app is open,
+        and whenever you come back to the PentAgent window.
       </p>
       <p>
         If you lose your internet connection, you can keep working. As long as PentAgent confirmed your access on this
         computer within the last three days, it lets you in with the same account.
       </p>
 
-      <H2 id="not-approved-yet">If your access isn&rsquo;t approved yet</H2>
+      <H2 id="not-approved-yet">If you see Not approved yet</H2>
       <p>
-        If your account isn&rsquo;t on the pilot list yet, PentAgent shows <Ui>Not approved yet</Ui> with the GitHub
-        username it checked.
+        Current builds still use the screen name <Ui>Not approved yet</Ui>, with the GitHub username it checked. Since
+        the pilot is open, this now only appears if that account has been blocked for misuse, for example for
+        testing systems without permission.
       </p>
-      <p>What you can do:</p>
       <ul>
         <li>
-          <strong>Haven&rsquo;t applied yet?</strong> Click <Ui>Apply for pilot access</Ui> to open the{" "}
-          <Link href="/pilot">pilot request form</Link>.
+          <strong>Think it&rsquo;s a mistake?</strong> Contact us through the{" "}
+          <a href="https://github.com/pentagent-ai/PentAgent/issues">PentAgent GitHub page</a> and include the username
+          shown.
         </li>
         <li>
-          <strong>Already applied?</strong> We review requests by hand, so it can take a little while. Once
-          you&rsquo;re approved, open PentAgent again and you&rsquo;ll go straight in.
-        </li>
-        <li>
-          <strong>Signed in with a different GitHub account?</strong> Click <Ui>Sign out</Ui> and sign in with the
-          account from your request.
+          <strong>Just signed in for the first time?</strong> Click <Ui>Check again</Ui>.
         </li>
       </ul>
 
@@ -139,8 +135,8 @@ export default function SignInPage() {
             "Close the GitHub tab, go back to PentAgent and click Continue with GitHub again. Make sure you finish the approval on GitHub.",
           ],
           [
-            "Not approved yet, but you were approved",
-            "Check you signed in with the GitHub account from your pilot request. If it's the right one, sign out and sign in again.",
+            "Not approved yet",
+            "Click Check again. If it stays, the account may have been blocked for misuse; contact us with the username shown.",
           ],
           [
             "Could not verify pilot access",

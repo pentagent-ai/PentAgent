@@ -8,7 +8,7 @@ const readout: { key: string; value: string; accent?: boolean }[] = [
   { key: "Model", value: "Your API key, or a local model" },
   { key: "Live requests", value: "Each one waits for Allow", accent: true },
   { key: "Stop", value: "Ends the run at any point" },
-  { key: "Access", value: "Invite-only pilot" },
+  { key: "Access", value: "Free pilot, sign in with GitHub" },
 ];
 
 export function Hero() {
@@ -39,8 +39,8 @@ export function Hero() {
             </p>
 
             <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:items-center">
-              <ButtonLink href={links.pilot} size="lg">
-                Request pilot access
+              <ButtonLink href={links.download} size="lg">
+                Download PentAgent
               </ButtonLink>
               <ButtonLink href={links.howItWorks} size="lg" variant="secondary">
                 See how it works

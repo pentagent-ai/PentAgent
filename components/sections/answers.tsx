@@ -32,8 +32,8 @@ export function Answers() {
           <span className="mx-2.5 text-line-strong" aria-hidden="true">
             /
           </span>
-          <Link href={links.pilot} className="text-ink underline decoration-line-strong underline-offset-4 hover:decoration-accent">
-            Request pilot access
+          <Link href={links.download} className="text-ink underline decoration-line-strong underline-offset-4 hover:decoration-accent">
+            Download PentAgent
           </Link>
         </p>
       </div>

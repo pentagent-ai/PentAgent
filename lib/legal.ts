@@ -9,9 +9,9 @@ export const legalDocs = {
     effectiveDateIso: "2026-10-18",
   },
   privacy: {
-    version: "1.1.0",
-    effectiveDate: "18 October 2026",
-    effectiveDateIso: "2026-10-18",
+    version: "1.2.0",
+    effectiveDate: "30 October 2026",
+    effectiveDateIso: "2026-10-30",
   },
 } as const;
 

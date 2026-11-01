@@ -77,13 +77,13 @@ export default function PrivacyPage() {
         </p>
       </LegalSection>
 
-      <LegalSection id="account" title="Your account and pilot request">
+      <LegalSection id="account" title="Your account">
         <p>To run sign-in and the pilot, we keep a few records (stored with Supabase):</p>
         <LegalList>
           <li>your GitHub sign-in details, such as your username and email</li>
-          <li>whether you&rsquo;re in the pilot</li>
+          <li>when you first and last signed in, and how many times</li>
+          <li>whether your account has been blocked for misuse</li>
           <li>which version of the Terms and this policy you accepted, and when</li>
-          <li>what you enter in the pilot request form, used only to review your request and get in touch</li>
         </LegalList>
         <p>
           We don&rsquo;t sell your data or use it for ads. The services that help us are Supabase (sign-in and records),
