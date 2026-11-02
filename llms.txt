@@ -2,11 +2,11 @@
 
 > PentAgent is an AI-native desktop workbench for web app security. It learns a web app from the traffic your browser sends, explains that traffic, plans tests, and runs a test only after you approve the live request.
 
-PentAgent runs on your machine. You bring your own model: an API key, or a local or self-hosted model. Projects and captured traffic stay on your machine. The model provider you choose receives the traffic you send to it, including request and response contents. Access is an invite-only pilot. Only test systems you own or have explicit permission to test.
+PentAgent runs on your machine. You bring your own model: an API key, or a local or self-hosted model. Projects and captured traffic stay on your machine. The model provider you choose receives the traffic you send to it, including request and response contents. Access is a free, open pilot: anyone can sign in with GitHub. Only test systems you own or have explicit permission to test.
 
 ## Product
 - [Home](https://pentagent-ai.github.io/PentAgent/): What PentAgent is, how a test runs, and where captured traffic goes.
-- [Request pilot access](https://pentagent-ai.github.io/PentAgent/pilot/): Invite-only pilot. A request is reviewed by hand and does not grant access by itself.
+- [Join the pilot](https://pentagent-ai.github.io/PentAgent/pilot/): Free, open pilot. Download PentAgent and sign in with GitHub.
 
 ## Documentation
 - [Docs](https://pentagent-ai.github.io/PentAgent/docs/): How to install, set up and use PentAgent.

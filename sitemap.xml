@@ -211,6 +211,11 @@
 <priority>0.3</priority>
 </url>
 <url>
+<loc>https://pentagent-ai.github.io/PentAgent/privacy-safety</loc>
+<changefreq>monthly</changefreq>
+<priority>0.4</priority>
+</url>
+<url>
 <loc>https://pentagent-ai.github.io/PentAgent/terms</loc>
 <changefreq>monthly</changefreq>
 <priority>0.3</priority>
