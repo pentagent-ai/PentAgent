@@ -31,7 +31,7 @@ export const docsNav: DocNavGroup[] = [
       {
         title: "Install",
         href: "/docs/getting-started/install",
-        description: "Download the pilot build, start it, and open PentAgent.",
+        description: "Download the build, start it, and open PentAgent.",
       },
       {
         title: "Sign in",
@@ -113,7 +113,7 @@ export const docsNav: DocNavGroup[] = [
     items: [
       { title: "Shortcuts", href: "/docs/reference/shortcuts", description: "Keyboard shortcuts for the workbench, Repeater and Fuzzer." },
       { title: "Troubleshooting", href: "/docs/reference/troubleshooting", description: "Fixes for common install, sign-in, proxy and capture problems." },
-      { title: "FAQ", href: "/docs/reference/faq", description: "Short answers to common questions about the pilot." },
+      { title: "FAQ", href: "/docs/reference/faq", description: "Short answers to common questions about PentAgent." },
     ],
   },
 ];

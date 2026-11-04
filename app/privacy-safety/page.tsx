@@ -46,7 +46,7 @@ export default function PrivacySafetyPage() {
       </h1>
       <p className="mt-5 max-w-xl text-pretty text-lg leading-relaxed text-ink-muted">
         What stays on your computer, what leaves it, and the controls around live requests. This page describes
-        pilot build 0.1.0-trial10.7. The full details are in the{" "}
+        build 0.1.0-trial10.7. The full details are in the{" "}
         <Link className={linkClass} href={links.privacy}>
           Privacy Policy
         </Link>
@@ -71,7 +71,7 @@ export default function PrivacySafetyPage() {
               </>,
               <>
                 <strong className="font-medium text-ink">To our sign-in service:</strong> your GitHub sign-in, your Terms and
-                Privacy acceptance, and checks for app updates and pilot settings. There is no approval step: any GitHub
+                Privacy acceptance, and checks for app updates and app settings. There is no approval step: any GitHub
                 account can sign in. It records your GitHub username, email and the times of your first and latest
                 sign-in, so we can count users and block accounts that misuse PentAgent. The app also shows your GitHub
                 name and profile picture. It never receives captured traffic, projects or API keys.

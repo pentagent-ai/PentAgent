@@ -5,7 +5,7 @@ import { DocPage } from "@/components/docs/doc-page";
 
 export const metadata: Metadata = {
   title: "Sign in",
-  description: "Sign in to PentAgent with any GitHub account. The pilot is free and open.",
+  description: "Sign in to PentAgent with any GitHub account. PentAgent is free and open.",
   alternates: { canonical: "/docs/getting-started/sign-in" },
   openGraph: { url: "/docs/getting-started/sign-in" },
 };
@@ -15,7 +15,7 @@ export default function SignInPage() {
     <DocPage href="/docs/getting-started/sign-in">
       <p>
         PentAgent asks you to sign in each time it can&rsquo;t find a saved session, for example on the first launch
-        or after you sign out. The pilot is free and open: any GitHub account can sign in, with no approval step.
+        or after you sign out. PentAgent is free and open: any GitHub account can sign in, with no approval step.
       </p>
 
 
@@ -65,7 +65,7 @@ export default function SignInPage() {
       <H2 id="not-approved-yet">If you see Not approved yet</H2>
       <p>
         Current builds still use the screen name <Ui>Not approved yet</Ui>, with the GitHub username it checked. Since
-        the pilot is open, this now only appears if that account has been blocked for misuse, for example for
+        sign-up is open, this now only appears if that account has been blocked for misuse, for example for
         testing systems without permission.
       </p>
       <ul>

@@ -5,7 +5,7 @@ import { DocPage } from "@/components/docs/doc-page";
 
 export const metadata: Metadata = {
   title: "FAQ",
-  description: "Short answers to common questions about the pilot.",
+  description: "Short answers to common questions about PentAgent.",
   alternates: { canonical: "/docs/reference/faq" },
   openGraph: { url: "/docs/reference/faq" },
 };
@@ -19,15 +19,15 @@ export default function FaqPage() {
         requests, and optionally use an AI assistant with your own model keys.
       </p>
 
-      <H2 id="pilot">Who can use the pilot?</H2>
+      <H2 id="pilot">Who can use PentAgent?</H2>
       <p>
-        Anyone with a GitHub account. The pilot is free and there&rsquo;s no approval step. See{" "}
+        Anyone with a GitHub account. PentAgent is free and there&rsquo;s no approval step. See{" "}
         <Link href="/docs/getting-started/sign-in">Sign in</Link>.
       </p>
 
       <H2 id="data">Where does my data live?</H2>
       <p>
-        Traffic, projects and chats stay on your machine under the pilot data directory. AI features send the context
+        Traffic, projects and chats stay on your machine under the PentAgent data directory. AI features send the context
         you select to the provider you configure — PentAgent doesn&rsquo;t mask secrets in that traffic. Analytics only
         run after you accept the welcome screen; details are on the privacy page.
       </p>

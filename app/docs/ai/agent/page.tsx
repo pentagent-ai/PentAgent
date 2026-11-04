@@ -25,8 +25,8 @@ export default function AgentPage() {
         <li>Pick a model with a configured key.</li>
         <li>Finish or stop any current chat turn.</li>
       </ul>
-      <Callout kind="heads-up" title="Pilot note">
-        Some pilot builds temporarily disable Agent or Explore. If you see that message, try again later or use Ask /
+      <Callout kind="heads-up" title="Early release note">
+        Some builds temporarily disable Agent or Explore. If you see that message, try again later or use Ask /
         Plan.
       </Callout>
 

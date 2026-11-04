@@ -40,9 +40,9 @@ export const productAnswers = [
       "Projects and captured traffic stay on your machine. PentAgent does not run a model for you. You bring a key for a model provider, or you point PentAgent at a local or self-hosted model. That provider receives the traffic you send to it, including request and response contents.",
   },
   {
-    question: "Who is the pilot for?",
+    question: "Who is PentAgent for?",
     answer:
-      "PentAgent is in a free, open pilot. It is built for cybersecurity students, junior pentesters and bug bounty hunters who want to understand an app from real traffic. Anyone can download it and sign in with GitHub.",
+      "PentAgent is free and open to everyone. It is built for cybersecurity students, junior pentesters and bug bounty hunters who want to understand an app from real traffic. Anyone can download it and sign in with GitHub.",
   },
   {
     question: "What can I test?",
@@ -93,7 +93,7 @@ export function siteJsonLd() {
           "@type": "Offer",
           availability: "https://schema.org/InStock",
           url: absolute("/download"),
-          description: "Free, open pilot. Sign in with GitHub.",
+          description: "Free and open to everyone. Sign in with GitHub.",
         },
       },
     ],

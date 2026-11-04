@@ -3,14 +3,14 @@ import { ButtonLink } from "@/components/button";
 import { links } from "@/lib/links";
 
 export const metadata: Metadata = {
-  title: "Join the pilot",
-  description: "The PentAgent pilot is free and open. Download it and sign in with any GitHub account. No application needed.",
+  title: "Get started",
+  description: "PentAgent is free and open to everyone. Download it and sign in with any GitHub account. No application needed.",
   alternates: { canonical: "/pilot" },
   openGraph: { url: "/pilot" },
 };
 
 const notes = [
-  "The pilot is free. There's no application and no approval step.",
+  "PentAgent is free. There's no application and no approval step.",
   "Sign in with any GitHub account.",
   "We record your GitHub username, email and sign-in times so we can count users and block accounts that misuse PentAgent.",
 ];
@@ -18,9 +18,9 @@ const notes = [
 export default function PilotPage() {
   return (
     <section className="mx-auto w-full max-w-3xl px-6 py-16 sm:py-20 lg:px-8 lg:py-28">
-      <p className="font-mono text-[11px] uppercase tracking-[0.16em] text-ink-dim"><span className="text-accent">§</span> Pilot</p>
+      <p className="font-mono text-[11px] uppercase tracking-[0.16em] text-ink-dim"><span className="text-accent">§</span> Get started</p>
       <h1 className="mt-5 text-balance text-4xl font-medium leading-[1.06] tracking-[-0.04em] text-ink md:text-5xl">
-        The pilot is open.
+        PentAgent is open to everyone.
       </h1>
       <p className="mt-6 max-w-xl text-pretty text-lg leading-relaxed text-ink-muted">
         Download PentAgent for Windows, macOS or Linux, open it, and sign in with GitHub.

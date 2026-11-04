@@ -41,7 +41,7 @@ export default function TroubleshootingPage() {
             "Make sure you finished approving on GitHub and allowed your browser to open the pentagent:// link.",
           ],
           ["Not approved yet", "Click Check again. If it stays, the account may have been blocked for misuse; contact us with the username shown."],
-          ["Update required", "Download the latest pilot build and replace your install."],
+          ["Update required", "Download the latest build and replace your install."],
         ]}
       />
 
@@ -64,7 +64,7 @@ export default function TroubleshootingPage() {
         head={["Problem", "What to try"]}
         rows={[
           ["No models / provider dropdown empty", <>Configure a provider under <Link href="/docs/settings/ai-models">AI models</Link> and Save.</>],
-          ["Agent or Explore disabled", "Some pilot builds turn these off temporarily — use Ask / Plan until they're back."],
+          ["Agent or Explore disabled", "Some builds turn these off temporarily — use Ask / Plan until they're back."],
           ["Spend cap hit", "Raise or clear limits under AI models, or wait for the daily window to reset."],
         ]}
       />

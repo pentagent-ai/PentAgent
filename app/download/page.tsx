@@ -6,7 +6,7 @@ import { links } from "@/lib/links";
 export const metadata: Metadata = {
   title: "Download",
   description:
-    "Download the free PentAgent pilot build for Windows, macOS, and Linux. Sign in with any GitHub account.",
+    "Download PentAgent for free for Windows, macOS, and Linux. Sign in with any GitHub account.",
   alternates: { canonical: "/download" },
   openGraph: { url: "/download" },
 };
@@ -87,11 +87,11 @@ export default function DownloadPage() {
   return (
     <section className="mx-auto w-full max-w-3xl px-6 py-16 sm:py-20 lg:px-8 lg:py-28">
       <p className="font-mono text-[11px] uppercase tracking-[0.16em] text-ink-dim">
-        <span className="text-accent">§</span> Pilot builds
+        <span className="text-accent">§</span> Builds
       </p>
       <h1 className="mt-5 text-balance text-4xl font-medium tracking-[-0.04em] text-ink md:text-5xl">Download</h1>
       <p className="mt-5 max-w-xl text-pretty text-lg leading-relaxed text-ink-muted">
-        Pilot builds for Windows, macOS, and Linux. Python is bundled inside the app, and the first launch sets up the
+        Builds for Windows, macOS, and Linux. Python is bundled inside the app, and the first launch sets up the
         local engine and lab browser automatically.
       </p>
       <p className="mt-3 font-mono text-xs text-ink-dim">Version {links.releaseVersion}</p>
@@ -138,7 +138,7 @@ export default function DownloadPage() {
       </div>
 
       <p className="mt-10 text-[15px] leading-relaxed text-ink-muted">
-        The pilot is free. Sign in with any GitHub account, no approval needed.{" "}
+        PentAgent is free. Sign in with any GitHub account, no approval needed.{" "}
         <Link className="text-ink underline decoration-line-strong underline-offset-4 hover:decoration-accent" href="/docs/getting-started/sign-in">
           How sign-in works
         </Link>

@@ -6,7 +6,7 @@ import { DocPage } from "@/components/docs/doc-page";
 
 export const metadata: Metadata = {
   title: "Install",
-  description: "Download the PentAgent pilot build for Windows, macOS, or Linux, start it, and open PentAgent.",
+  description: "Download the PentAgent build for Windows, macOS, or Linux, start it, and open PentAgent.",
   alternates: { canonical: "/docs/getting-started/install" },
   openGraph: { url: "/docs/getting-started/install" },
 };
@@ -28,12 +28,12 @@ export default function InstallPage() {
           <strong>About 2 GB of free disk space</strong> for the app, its local environment, and the lab browser.
         </li>
         <li>
-          <strong>A GitHub account.</strong> The pilot is free and open: anyone can download the build and sign in
+          <strong>A GitHub account.</strong> PentAgent is free and open: anyone can download the build and sign in
           with GitHub. There&rsquo;s nothing to apply for.
         </li>
       </ul>
 
-      <H2 id="download">Download the pilot build</H2>
+      <H2 id="download">Download the build</H2>
       <Steps>
         <Step title="Open the download page">
           <p>
@@ -87,7 +87,7 @@ sha256sum -c pentagent_amd64.deb.sha256`}
         </Step>
         <Step title="Open the app the first time">
           <p>
-            Pilot builds are ad-hoc signed rather than Apple-notarized. For the first launch, open{" "}
+            Builds are ad-hoc signed rather than Apple-notarized. For the first launch, open{" "}
             <Ui>Applications</Ui>, <strong>right-click</strong> (or Control-click) <Ui>PentAgent</Ui> and choose{" "}
             <Ui>Open</Ui>, then click <Ui>Open</Ui> in the dialog (or allow it under{" "}
             <Ui>System Settings › Privacy &amp; Security › Open Anyway</Ui>).
@@ -199,7 +199,7 @@ pentagent`}
         </Step>
       </Steps>
       <p>
-        If PentAgent says <strong>Update required</strong> when you sign in, your build is older than the pilot
+        If PentAgent says <strong>Update required</strong> when you sign in, your build is older than PentAgent
         supports. See <Link href="/docs/getting-started/sign-in#update-required">Update required</Link>.
       </p>
 

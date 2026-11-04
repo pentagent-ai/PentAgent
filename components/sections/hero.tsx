@@ -8,7 +8,7 @@ const readout: { key: string; value: string; accent?: boolean }[] = [
   { key: "Model", value: "Your API key, or a local model" },
   { key: "Live requests", value: "Each one waits for Allow", accent: true },
   { key: "Stop", value: "Ends the run at any point" },
-  { key: "Access", value: "Free pilot, sign in with GitHub" },
+  { key: "Access", value: "Free, sign in with GitHub" },
 ];
 
 export function Hero() {
@@ -21,7 +21,7 @@ export function Hero() {
             <span className="mx-2 text-line-strong">/</span>
             Web app security workbench
           </p>
-          <p className="hidden sm:block">Desktop &middot; Pilot</p>
+          <p className="hidden sm:block">Desktop &middot; Early release</p>
         </div>
         <div className="ruler mt-3 w-full" aria-hidden="true" />
 

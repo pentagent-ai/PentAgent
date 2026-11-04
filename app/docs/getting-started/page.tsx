@@ -19,7 +19,7 @@ export default function GettingStartedPage() {
 
       <H2 id="before-you-begin">Before you begin</H2>
       <ul>
-        <li>A GitHub account. The pilot is free and open, so there&rsquo;s nothing to apply for.</li>
+        <li>A GitHub account. PentAgent is free and open, so there&rsquo;s nothing to apply for.</li>
         <li>
           A 64-bit Windows, macOS (Apple Silicon), or 64-bit Linux computer with an internet connection for the first
           launch.
@@ -31,7 +31,7 @@ export default function GettingStartedPage() {
       <Steps>
         <Step title="Install PentAgent">
           <p>
-            Download the pilot build for Windows, macOS, or Linux and open PentAgent. The first launch sets up the
+            Download the build for Windows, macOS, or Linux and open PentAgent. The first launch sets up the
             local engine and lab browser for you.{" "}
             <Link href="/docs/getting-started/install">Install</Link>
           </p>

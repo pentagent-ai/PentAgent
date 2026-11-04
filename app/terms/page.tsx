@@ -8,7 +8,7 @@ const doc = legalDocs.terms;
 export const metadata: Metadata = {
   title: "Terms",
   description:
-    "The terms for using PentAgent, in plain English: only test what you're allowed to, how your own AI model sees your traffic, and how the pilot works.",
+    "The terms for using PentAgent, in plain English: only test what you're allowed to, how your own AI model sees your traffic, and how this early release works.",
   alternates: { canonical: links.terms },
   openGraph: {
     title: "Terms | PentAgent",
@@ -39,9 +39,9 @@ export default function TermsPage() {
         </p>
       </LegalSection>
 
-      <LegalSection id="pilot" title="The pilot">
+      <LegalSection id="pilot" title="Early release">
         <p>
-          PentAgent is in a free, open pilot. Things will change, and some features may not work perfectly yet. We may
+          PentAgent is free and open to everyone. Things will change, and some features may not work perfectly yet. We may
           pause or end access, and we may block accounts that misuse PentAgent or break these terms. Please keep
           your sign-in to yourself.
         </p>
@@ -82,7 +82,7 @@ export default function TermsPage() {
 
       <LegalSection id="no-guarantees" title="No guarantees">
         <p>
-          PentAgent is pilot software, provided as it is. It can have bugs and can miss issues, and AI output can be
+          PentAgent is early-release software, provided as it is. It can have bugs and can miss issues, and AI output can be
           wrong, so please double-check findings before you rely on them.
         </p>
       </LegalSection>
