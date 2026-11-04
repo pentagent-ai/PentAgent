@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import { LegalLayout, LegalList, LegalSection, Ph } from "@/components/legal-layout";
-import { legalDocs, legalEntityPlaceholder } from "@/lib/legal";
+import { LegalLayout, LegalList, LegalSection } from "@/components/legal-layout";
+import { legalDocs } from "@/lib/legal";
 import { links } from "@/lib/links";
 
 const doc = legalDocs.terms;
@@ -30,7 +30,7 @@ export default function TermsPage() {
     >
       <LegalSection id="about" title="Who we are">
         <p>
-          PentAgent is made by <Ph>{legalEntityPlaceholder}</Ph>. By using the app or this site, you agree to these terms
+          PentAgent is made by Xavoc Technocrats Private Limited. By using the app or this site, you agree to these terms
           and to our{" "}
           <a className={linkClass} href={links.privacy}>
             Privacy Policy
@@ -42,7 +42,7 @@ export default function TermsPage() {
       <LegalSection id="pilot" title="The pilot">
         <p>
           PentAgent is in a free, open pilot. Things will change, and some features may not work perfectly yet. We may
-          pause or end pilot access, and we may block accounts that misuse PentAgent or break these terms. Please keep
+          pause or end access, and we may block accounts that misuse PentAgent or break these terms. Please keep
           your sign-in to yourself.
         </p>
       </LegalSection>

@@ -22,8 +22,8 @@ const noProjectBody = (
 
 export const presets: Record<string, Preset> = {
   "sign-in": { section: L.gate.signIn.title, label: "PentAgent sign-in screen with a Continue with GitHub button.", width: 620, render: () => <GateScreen variant="sign-in" /> },
-  "not-approved": { section: L.gate.notApproved.title, label: "Not approved yet screen naming the GitHub user, with Apply for pilot access and Sign out links.", width: 620, render: () => <GateScreen variant="not-approved" /> },
-  "access-error": { section: L.gate.accessError.title, label: "Could not verify pilot access screen with Try again and Sign out buttons.", width: 620, render: () => <GateScreen variant="access-error" /> },
+  "not-approved": { section: L.gate.notApproved.title, label: "Not approved yet screen naming the GitHub user, with Contact us on GitHub and Sign out links.", width: 620, render: () => <GateScreen variant="not-approved" /> },
+  "access-error": { section: L.gate.accessError.title, label: "Could not verify access screen with Try again and Sign out buttons.", width: 620, render: () => <GateScreen variant="access-error" /> },
   "update-required": { section: L.gate.updateRequired.title, label: "Update required screen with a Get the latest build button.", width: 620, render: () => <GateScreen variant="update-required" /> },
   welcome: { section: L.welcome.title, label: "Welcome screen with two unticked checkboxes; Continue is not available yet.", width: 620, render: () => <WelcomeCard /> },
   "welcome-checked": { section: L.welcome.title, label: "Welcome screen with both checkboxes ticked and Continue available.", width: 620, render: () => <WelcomeCard checked /> },

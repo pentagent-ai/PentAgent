@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import { LegalLayout, LegalList, LegalSection, Ph } from "@/components/legal-layout";
-import { legalDocs, legalEntityPlaceholder } from "@/lib/legal";
+import { LegalLayout, LegalList, LegalSection } from "@/components/legal-layout";
+import { legalDocs } from "@/lib/legal";
 import { links } from "@/lib/links";
 
 const doc = legalDocs.privacy;
@@ -78,7 +78,7 @@ export default function PrivacyPage() {
       </LegalSection>
 
       <LegalSection id="account" title="Your account">
-        <p>To run sign-in and the pilot, we keep a few records (stored with Supabase):</p>
+        <p>To run sign-in and your account, we keep a few records (stored with Supabase):</p>
         <LegalList>
           <li>your GitHub sign-in details, such as your username and email</li>
           <li>when you first and last signed in, and how many times</li>
@@ -100,7 +100,7 @@ export default function PrivacyPage() {
 
       <LegalSection id="changes" title="Changes and contact">
         <p>
-          PentAgent is provided by <Ph>{legalEntityPlaceholder}</Ph>. If we update this policy, we&rsquo;ll post the new
+          PentAgent is provided by Xavoc Technocrats Private Limited. If we update this policy, we&rsquo;ll post the new
           version here and the app will ask you to accept it.
         </p>
       </LegalSection>

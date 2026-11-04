@@ -53,7 +53,7 @@ export default function SignInPage() {
 
       <H2 id="access-checks">How access checks work</H2>
       <p>
-        Right after you sign in, PentAgent asks our server whether your account can use the pilot. Every GitHub
+        Right after you sign in, PentAgent asks our server whether your account can use PentAgent. Every GitHub
         account can, unless it has been blocked for misuse. It checks again every few hours while the app is open,
         and whenever you come back to the PentAgent window.
       </p>
@@ -80,7 +80,7 @@ export default function SignInPage() {
       </ul>
 
       <H2 id="other-screens">Other screens you might see</H2>
-      <H3 id="could-not-verify">Could not verify pilot access</H3>
+      <H3 id="could-not-verify">Could not verify access</H3>
       <p>
         PentAgent couldn&rsquo;t reach our server to check your access, and there&rsquo;s no recent confirmation on
         this computer to fall back on. Check your connection, then click <Ui>Try again</Ui>. You can also{" "}
@@ -89,7 +89,7 @@ export default function SignInPage() {
 
       <H3 id="update-required">Update required</H3>
       <p>
-        Your build is older than the oldest version the pilot supports. Click <Ui>Get the latest build</Ui>, then
+        Your build is older than the oldest version PentAgent supports. Click <Ui>Get the latest build</Ui>, then
         follow <Link href="/docs/getting-started/install#updating">Updating to a new build</Link>.
       </p>
       <p>
@@ -108,7 +108,7 @@ export default function SignInPage() {
           <>Your name and GitHub username.</>,
           <>The email address on your GitHub account.</>,
           <>
-            Your access status, for example <Ui>Pilot access · allowed</Ui>.
+            Your access status, for example <Ui>Access · allowed</Ui>.
           </>,
           <>
             <Ui>Sign out</Ui>.
@@ -139,7 +139,7 @@ export default function SignInPage() {
             "Click Check again. If it stays, the account may have been blocked for misuse; contact us with the username shown.",
           ],
           [
-            "Could not verify pilot access",
+            "Could not verify access",
             "Check your internet connection, then click Try again.",
           ],
         ]}

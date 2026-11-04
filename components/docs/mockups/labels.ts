@@ -70,26 +70,26 @@ export const onboarding = {
 /** components/pilot/PilotGateScreens.tsx */
 export const gate = {
   signIn: {
-    title: "PentAgent pilot",
-    body: "Sign in to access the pilot. Access is limited to approved participants.",
+    title: "Sign in to PentAgent",
+    body: "Sign in with GitHub to get started. PentAgent is free and open to everyone.",
     github: "Continue with GitHub",
     busy: "Redirecting…",
   },
   notApproved: {
     title: "Not approved yet",
-    body: (user: string) => `GitHub user @${user} is not on the pilot allowlist yet.`,
-    apply: "Apply for pilot access",
+    body: (user: string) => `GitHub user @${user} can't use PentAgent right now.`,
+    apply: "Contact us on GitHub",
     signOut: "Sign out",
   },
   accessError: {
-    title: "Could not verify pilot access",
-    body: "PentAgent could not confirm your pilot allowlist entry. Check your connection and try again.",
+    title: "Could not verify access",
+    body: "PentAgent could not confirm your account. Check your connection and try again.",
     retry: "Try again",
     signOut: "Sign out",
   },
   updateRequired: {
     title: "Update required",
-    body: (current: string, min: string) => `This build (${current}) is below the minimum supported version (${min}) for the pilot.`,
+    body: (current: string, min: string) => `This build (${current}) is below the minimum supported version (${min}).`,
     action: "Get the latest build",
   },
 };
@@ -118,7 +118,7 @@ export const welcome = {
 };
 
 /** components/pilot/UserMenu.tsx */
-export const userMenu = { email: "Email", access: "Access", allowed: "Pilot access · allowed", signOut: "Sign out" };
+export const userMenu = { email: "Email", access: "Access", allowed: "Access · allowed", signOut: "Sign out" };
 
 /** panes/DashboardPane.tsx (labels as rendered) */
 export const dashboard = {
